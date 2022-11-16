@@ -1,0 +1,1450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <OwnerKey>{FE3BBBB6-72D5-11d2-9ACE-00C04F79A2A4}</OwnerKey>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3D8BC296-0465-430A-B2FE-57A12A4FC132}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>CEF.WebUI</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>
+    </RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessFacadeProjects\Common\Common.vbproj">
+      <Project>{073ec36a-2483-47d8-9242-fc035463fa5c}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessRulesProjects\BusinessEntity\BusinessEntity.vbproj">
+      <Project>{8ef8aee9-d3c2-4acc-922d-64018646bce3}</Project>
+      <Name>BusinessEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessRulesProjects\BusinessRules\BusinessRules.vbproj">
+      <Project>{25494682-212d-4820-ad35-72932f2fea07}</Project>
+      <Name>BusinessRules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessProjects\DataAccess\DataAccess.vbproj">
+      <Project>{19458b80-677c-44b9-ba57-e712a04fbda6}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebControls\WebControls.vbproj">
+      <Project>{d4a5a806-e68c-4a98-a1ff-a040aa64358b}</Project>
+      <Name>WebControls</Name>
+    </ProjectReference>
+    <Reference Include="AjaxControlToolkit, Version=1.0.20229.29977, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BusinessFacadeProjects\Common\Librerias\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxPro, Version=9.2.17.1, Culture=neutral, PublicKeyToken=4735ae9824c7d3ec">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>WebUI.References\AjaxPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Anthem, Version=1.5.2.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>WebUI.References\Anthem.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="itextsharp, Version=5.0.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>WebUI.References\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Web.UI.WebControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Clases\Generales\ConstantesWebUI.vb" />
+    <Compile Include="Clases\Utils\Sesion.vb" />
+    <Compile Include="ErrorPage.aspx.designer.vb">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.vb">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login2.aspx.designer.vb">
+      <DependentUpon>Login2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login2.aspx.vb">
+      <DependentUpon>Login2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginDoor.aspx.designer.vb">
+      <DependentUpon>LoginDoor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDoor.aspx.vb">
+      <DependentUpon>LoginDoor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagIni\Ajax\ajaxCierreSeion.aspx.vb">
+      <DependentUpon>ajaxCierreSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagIni\Ajax\ajaxCierreSesion.aspx.vb">
+      <DependentUpon>ajaxCierreSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagIni\Portal.aspx.designer.vb">
+      <DependentUpon>Portal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagIni\Portal.aspx.vb">
+      <DependentUpon>Portal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagIni\PortalDefault.aspx.designer.vb">
+      <DependentUpon>PortalDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagIni\PortalDefault.aspx.vb">
+      <DependentUpon>PortalDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\busBase.aspx.designer.vb">
+      <DependentUpon>busBase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\busBase.aspx.vb">
+      <DependentUpon>busBase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\busCIIU.aspx.designer.vb">
+      <DependentUpon>busCIIU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\busCIIU.aspx.vb">
+      <DependentUpon>busCIIU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\busGrupoEconomico.aspx.designer.vb">
+      <DependentUpon>busGrupoEconomico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\busGrupoEconomico.aspx.vb">
+      <DependentUpon>busGrupoEconomico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\busMetodizado.aspx.designer.vb">
+      <DependentUpon>busMetodizado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\busMetodizado.aspx.vb">
+      <DependentUpon>busMetodizado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\busSeleccionarPeriodo.aspx.designer.vb">
+      <DependentUpon>busSeleccionarPeriodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\busSeleccionarPeriodo.aspx.vb">
+      <DependentUpon>busSeleccionarPeriodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\busSeleccionarPeriodoProyeccion.aspx.designer.vb">
+      <DependentUpon>busSeleccionarPeriodoProyeccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\busSeleccionarPeriodoProyeccion.aspx.vb">
+      <DependentUpon>busSeleccionarPeriodoProyeccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\busUsuario.aspx.designer.vb">
+      <DependentUpon>busUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\busUsuario.aspx.vb">
+      <DependentUpon>busUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\consCalendario.aspx.designer.vb">
+      <DependentUpon>consCalendario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\consCalendario.aspx.vb">
+      <DependentUpon>consCalendario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\consCruceRCD.aspx.designer.vb">
+      <DependentUpon>consCruceRCD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\consCruceRCD.aspx.vb">
+      <DependentUpon>consCruceRCD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\consCuenta.aspx.designer.vb">
+      <DependentUpon>consCuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\consCuenta.aspx.vb">
+      <DependentUpon>consCuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\consDescargaData.aspx.designer.vb">
+      <DependentUpon>consDescargaData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\consDescargaData.aspx.vb">
+      <DependentUpon>consDescargaData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\consEmpresasPorCIIU.aspx.designer.vb">
+      <DependentUpon>consEmpresasPorCIIU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\consEmpresasPorCIIU.aspx.vb">
+      <DependentUpon>consEmpresasPorCIIU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\consEmpresasPorGrpEconomico.aspx.designer.vb">
+      <DependentUpon>consEmpresasPorGrpEconomico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\consEmpresasPorGrpEconomico.aspx.vb">
+      <DependentUpon>consEmpresasPorGrpEconomico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\consInformeSBS.aspx.designer.vb">
+      <DependentUpon>consInformeSBS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\consInformeSBS.aspx.vb">
+      <DependentUpon>consInformeSBS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\consParametrica.aspx.designer.vb">
+      <DependentUpon>consParametrica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\consParametrica.aspx.vb">
+      <DependentUpon>consParametrica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\MaskWindowDialogo.aspx.designer.vb">
+      <DependentUpon>MaskWindowDialogo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\MaskWindowDialogo.aspx.vb">
+      <DependentUpon>MaskWindowDialogo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mcbCorridaMetodizado.aspx.designer.vb">
+      <DependentUpon>mcbCorridaMetodizado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mcbCorridaMetodizado.aspx.vb">
+      <DependentUpon>mcbCorridaMetodizado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mcbFormula.aspx.designer.vb">
+      <DependentUpon>mcbFormula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mcbFormula.aspx.vb">
+      <DependentUpon>mcbFormula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mcbReconciliacion.aspx.designer.vb">
+      <DependentUpon>mcbReconciliacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mcbReconciliacion.aspx.vb">
+      <DependentUpon>mcbReconciliacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mcbSupuesto.aspx.designer.vb">
+      <DependentUpon>mcbSupuesto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mcbSupuesto.aspx.vb">
+      <DependentUpon>mcbSupuesto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mntAnalisis.aspx.designer.vb">
+      <DependentUpon>mntAnalisis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntAnalisis.aspx.vb">
+      <DependentUpon>mntAnalisis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mntAsociadosCovenant.aspx.designer.vb">
+      <DependentUpon>mntAsociadosCovenant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntAsociadosCovenant.aspx.vb">
+      <SubType>ASPXCodebehind</SubType>
+      <DependentUpon>mntAsociadosCovenant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntAuditor.aspx.designer.vb">
+      <DependentUpon>mntAuditor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntAuditor.aspx.vb">
+      <DependentUpon>mntAuditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mntBusquedaCliente.aspx.designer.vb">
+      <DependentUpon>mntBusquedaCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntBusquedaCliente.aspx.vb">
+      <DependentUpon>mntBusquedaCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mntEEFF.aspx.designer.vb">
+      <DependentUpon>mntEEFF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntEEFF.aspx.vb">
+      <DependentUpon>mntEEFF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mntFormulas.aspx.designer.vb">
+      <DependentUpon>mntFormulas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntFormulas.aspx.vb">
+      <DependentUpon>mntFormulas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mntGeneral.aspx.designer.vb">
+      <DependentUpon>mntGeneral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntGeneral.aspx.vb">
+      <DependentUpon>mntGeneral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mntMetodizado.aspx.designer.vb">
+      <DependentUpon>mntMetodizado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntMetodizado.aspx.vb">
+      <DependentUpon>mntMetodizado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mntOperador.aspx.designer.vb">
+      <DependentUpon>mntOperador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntOperador.aspx.vb">
+      <DependentUpon>mntOperador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mntParametro.aspx.designer.vb">
+      <DependentUpon>mntParametro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntParametro.aspx.vb">
+      <DependentUpon>mntParametro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mntPeriodoCuenta.aspx.designer.vb">
+      <DependentUpon>mntPeriodoCuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntPeriodoCuenta.aspx.vb">
+      <DependentUpon>mntPeriodoCuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mntPeriodoNota.aspx.designer.vb">
+      <DependentUpon>mntPeriodoNota.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntPeriodoNota.aspx.vb">
+      <DependentUpon>mntPeriodoNota.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mntPeriodoProyeccion.aspx.designer.vb">
+      <DependentUpon>mntPeriodoProyeccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntPeriodoProyeccion.aspx.vb">
+      <DependentUpon>mntPeriodoProyeccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mntPeriodoProyeccionProcess1.aspx.designer.vb">
+      <DependentUpon>mntPeriodoProyeccionProcess1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntPeriodoProyeccionProcess1.aspx.vb">
+      <DependentUpon>mntPeriodoProyeccionProcess1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mntProyeccion.aspx.designer.vb">
+      <DependentUpon>mntProyeccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntProyeccion.aspx.vb">
+      <DependentUpon>mntProyeccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mntRatios.aspx.designer.vb">
+      <DependentUpon>mntRatios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntRatios.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>mntRatios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntRCD.aspx.designer.vb">
+      <DependentUpon>mntRCD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntRCD.aspx.vb">
+      <DependentUpon>mntRCD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mntSupuesto.aspx.designer.vb">
+      <DependentUpon>mntSupuesto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntSupuesto.aspx.vb">
+      <DependentUpon>mntSupuesto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mntTipoCambio.aspx.designer.vb">
+      <DependentUpon>mntTipoCambio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntTipoCambio.aspx.vb">
+      <DependentUpon>mntTipoCambio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mntTipoEEFF.aspx.designer.vb">
+      <DependentUpon>mntTipoEEFF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntTipoEEFF.aspx.vb">
+      <DependentUpon>mntTipoEEFF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagMnt\mntUsuario.aspx.designer.vb">
+      <DependentUpon>mntUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagMnt\mntUsuario.aspx.vb">
+      <DependentUpon>mntUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagRpt\dsCruceRCD.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCruceRCD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\dsEmpresasPorCIIU.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmpresasPorCIIU.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\dsEmpresasPorGrpEconomico.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEmpresasPorGrpEconomico.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\dsFlujoProyectado.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFlujoProyectado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\dsMetodizado.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMetodizado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\dsPrueba.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPrueba.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\dsResumenEjecutivo.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsResumenEjecutivo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\dsSubReportCovenant.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSubReportCovenant.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\PdfMerge.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PagRpt\repCruceRCD.vb">
+      <DependentUpon>repCruceRCD.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\repEmpresasPorCIIU.vb">
+      <DependentUpon>repEmpresasPorCIIU.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\repEmpresasPorGrpEconomico.vb">
+      <DependentUpon>repEmpresasPorGrpEconomico.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\repFlujoProyectado.vb">
+      <DependentUpon>repFlujoProyectado.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\repMetodizadoH1.vb">
+      <DependentUpon>repMetodizadoH.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\repMetodizadoH2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>repMetodizadoH2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\repMetodizadoV1.vb">
+      <DependentUpon>repMetodizadoV.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\repMetodizadoV_BPE.vb">
+      <DependentUpon>repMetodizadoV_BPE.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\repResumenEjecutivo.vb">
+      <DependentUpon>repResumenEjecutivo.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\rvwCruceRCD.aspx.designer.vb">
+      <DependentUpon>rvwCruceRCD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\rvwCruceRCD.aspx.vb">
+      <DependentUpon>rvwCruceRCD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagRpt\rvwEmpresasPorCIIU.aspx.designer.vb">
+      <DependentUpon>rvwEmpresasPorCIIU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\rvwEmpresasPorCIIU.aspx.vb">
+      <DependentUpon>rvwEmpresasPorCIIU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagRpt\rvwEmpresasPorGrpEconomico.aspx.designer.vb">
+      <DependentUpon>rvwEmpresasPorGrpEconomico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\rvwEmpresasPorGrpEconomico.aspx.vb">
+      <DependentUpon>rvwEmpresasPorGrpEconomico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagRpt\rvwExpDescargaData.aspx.designer.vb">
+      <DependentUpon>rvwExpDescargaData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\rvwExpDescargaData.aspx.vb">
+      <DependentUpon>rvwExpDescargaData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagRpt\rvwExpDescargaDataPrioridad.aspx.designer.vb">
+      <DependentUpon>rvwExpDescargaDataPrioridad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\rvwExpDescargaDataPrioridad.aspx.vb">
+      <DependentUpon>rvwExpDescargaDataPrioridad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagRpt\rvwExpEmpresasPorCIIU.aspx.designer.vb">
+      <DependentUpon>rvwExpEmpresasPorCIIU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\rvwExpEmpresasPorCIIU.aspx.vb">
+      <DependentUpon>rvwExpEmpresasPorCIIU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagRpt\rvwExpEmpresasPorGrpEconomico.aspx.designer.vb">
+      <DependentUpon>rvwExpEmpresasPorGrpEconomico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\rvwExpEmpresasPorGrpEconomico.aspx.vb">
+      <DependentUpon>rvwExpEmpresasPorGrpEconomico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagRpt\rvwExpFlujoProyectado.aspx.designer.vb">
+      <DependentUpon>rvwExpFlujoProyectado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\rvwExpFlujoProyectado.aspx.vb">
+      <DependentUpon>rvwExpFlujoProyectado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagRpt\rvwExpInformeSBS.aspx.designer.vb">
+      <DependentUpon>rvwExpInformeSBS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\rvwExpInformeSBS.aspx.vb">
+      <DependentUpon>rvwExpInformeSBS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagRpt\rvwExpReconciliado.aspx.designer.vb">
+      <DependentUpon>rvwExpReconciliado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\rvwExpReconciliado.aspx.vb">
+      <DependentUpon>rvwExpReconciliado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagRpt\rvwExpSupuesto.aspx.designer.vb">
+      <DependentUpon>rvwExpSupuesto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\rvwExpSupuesto.aspx.vb">
+      <DependentUpon>rvwExpSupuesto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagRpt\rvwFlujoProyectado.aspx.designer.vb">
+      <DependentUpon>rvwFlujoProyectado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\rvwFlujoProyectado.aspx.vb">
+      <DependentUpon>rvwFlujoProyectado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagRpt\rvwMetodizado.aspx.designer.vb">
+      <DependentUpon>rvwMetodizado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\rvwMetodizado.aspx.vb">
+      <DependentUpon>rvwMetodizado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagRpt\rvwResumenEjecutivo.aspx.designer.vb">
+      <DependentUpon>rvwResumenEjecutivo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagRpt\rvwResumenEjecutivo.aspx.vb">
+      <DependentUpon>rvwResumenEjecutivo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagRpt\SubReportesH\CovenantParametro.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CovenantParametro.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\SubReportesH\Detalle_Formula.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Detalle_Formula.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\SubReportesH\EEFF_Sub_BalanceGeneral.vb">
+      <DependentUpon>EEFF_Sub_BalanceGeneral.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\SubReportesH\EEFF_Sub_EstadodeGananciasyPerdidas.vb">
+      <DependentUpon>EEFF_Sub_EstadodeGananciasyPerdidas.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\SubReportesV\EEFF_Sub_DesglosedeCuentasImportantes.vb">
+      <DependentUpon>EEFF_Sub_DesglosedeCuentasImportantes.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\SubReportesV\EEFF_Sub_FuentesyUsosdeFondos.vb">
+      <DependentUpon>EEFF_Sub_FuentesyUsosdeFondos.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\SubReportesV\EEFF_Sub_ReconciliacionPatrimonioyActivoFijo.vb">
+      <DependentUpon>EEFF_Sub_ReconciliacionPatrimonioyActivoFijo.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\SubReportesV\RatiosFinancieros.vb">
+      <DependentUpon>RatiosFinancieros.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\SubReportesV\RatiosFinancieros_Devaluacion.vb">
+      <DependentUpon>RatiosFinancieros_Devaluacion.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\SubReportesV\RatiosFinancieros_GradoExposicion.vb">
+      <DependentUpon>RatiosFinancieros_GradoExposicion.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\SubReportesV\Riesgo_Camb_Sub_FuentesyUsosdeFondosPorMoneda.vb">
+      <DependentUpon>Riesgo_Camb_Sub_FuentesyUsosdeFondosPorMoneda.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\SubReportesV\Riesgo_Camb_Sub_FuentesyUsosdeFondosPorMoneda_2.vb">
+      <DependentUpon>Riesgo_Camb_Sub_FuentesyUsosdeFondosPorMoneda_2.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\SubReportesV\Riesgo_Camb_Sub_FuentesyUsosdeFondosPorMoneda_3.vb">
+      <DependentUpon>Riesgo_Camb_Sub_FuentesyUsosdeFondosPorMoneda_3.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\SubReportesV\SNotas.vb">
+      <DependentUpon>SNotas.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagRpt\SubReportesV\SNotasBalance.vb">
+      <DependentUpon>SNotasBalance.rpt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PagWUC\LeePeriodo.ascx.designer.vb">
+      <DependentUpon>LeePeriodo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PagWUC\LeePeriodo.ascx.vb">
+      <DependentUpon>LeePeriodo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagWUC\Menu.ascx.designer.vb">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PagWUC\Menu.ascx.vb">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagWUC\Pie.ascx.designer.vb">
+      <DependentUpon>Pie.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PagWUC\Pie.ascx.vb">
+      <DependentUpon>Pie.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagWUC\Titulo.ascx.designer.vb">
+      <DependentUpon>Titulo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PagWUC\Titulo.ascx.vb">
+      <DependentUpon>Titulo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Util.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\AjaxPro.dll" />
+    <Content Include="bin\Anthem.dll" />
+    <Content Include="bin\CEF.WebControls.dll" />
+    <Content Include="bin\CEF.WebUI.dll" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="cefCommonConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dependencias\AjaxPro.dll" />
+    <Content Include="Dependencias\Anthem.dll" />
+    <Content Include="Dependencias\cefDataConfig.xml" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="Estilos\Calendario.css" />
+    <Content Include="Estilos\jquery-ui.css" />
+    <Content Include="Estilos\jquery.ui.all.css" />
+    <Content Include="Estilos\menuBar.css" />
+    <Content Include="Estilos\PagLst.css" />
+    <Content Include="Funciones\AJAX.js" />
+    <Content Include="Funciones\Css.js" />
+    <Content Include="Funciones\jquery-ui.min.js" />
+    <Content Include="Funciones\jquery.min.js" />
+    <Content Include="Funciones\json2.js" />
+    <Content Include="Funciones\menuBar.js" />
+    <Content Include="Funciones\modalPopUp.js" />
+    <Content Include="Funciones\UtilAjax.js" />
+    <Content Include="Funciones\UtilFecha.js" />
+    <Content Include="Funciones\UtilVentana.js" />
+    <Content Include="Imagen\bordes\brd_curva_Inf_Der_blue.gif" />
+    <Content Include="Imagen\bordes\brd_curva_Inf_Izq_blue.gif" />
+    <Content Include="Imagen\bordes\brd_curva_Sup_Der_blue.gif" />
+    <Content Include="Imagen\bordes\brd_curva_Sup_Izq_blue.gif" />
+    <Content Include="Imagen\bordes\brd_sp.gif" />
+    <Content Include="Imagen\bordes\brd_TabActivo_blue.gif" />
+    <Content Include="Imagen\bordes\brd_TabDerActivo_blue.gif" />
+    <Content Include="Imagen\bordes\brd_TabDerNoActivo_blue.gif" />
+    <Content Include="Imagen\bordes\brd_TabIzqActivo_blue.gif" />
+    <Content Include="Imagen\bordes\brd_TabIzqNoActivo_blue.gif" />
+    <Content Include="Imagen\bordes\brd_TabLin_blue.gif" />
+    <Content Include="Imagen\bordes\brd_TabNoActivo_blue.gif" />
+    <Content Include="Imagen\fondos\bgcolor.gif" />
+    <Content Include="Imagen\fondos\Fondo.GIF" />
+    <Content Include="Imagen\iconos\icon_formula.png" />
+    <Content Include="Imagen\iconos\icon_Misc_Error.JPG" />
+    <Content Include="Imagen\iconos\icon_Misc_OK.JPG" />
+    <Content Include="Imagen\iconos\icon_ratios.png" />
+    <Content Include="Imagen\iconos\ico_add_covenant.png" />
+    <Content Include="Imagen\iconos\ico_Ajuntar.gif" />
+    <Content Include="Imagen\iconos\ico_asociados.png" />
+    <Content Include="Imagen\iconos\ico_Calendario.gif" />
+    <Content Include="Imagen\iconos\ico_Cancelar.gif" />
+    <Content Include="Imagen\iconos\ico_Cerrar.gif" />
+    <Content Include="Imagen\iconos\ico_CloseUp.gif" />
+    <Content Include="Imagen\iconos\ico_Comentario.gif" />
+    <Content Include="Imagen\iconos\ico_Contacto24.gif" />
+    <Content Include="Imagen\iconos\ico_Descargar.gif" />
+    <Content Include="Imagen\iconos\ico_Editar.gif" />
+    <Content Include="Imagen\iconos\ico_Eliminar.gif" />
+    <Content Include="Imagen\iconos\ico_Enviar.gif" />
+    <Content Include="Imagen\iconos\ico_excel.gif" />
+    <Content Include="Imagen\iconos\ico_FlechaDer.gif" />
+    <Content Include="Imagen\iconos\ico_FlechaIzq.gif" />
+    <Content Include="Imagen\iconos\ico_formula_covenant.png" />
+    <Content Include="Imagen\iconos\ico_formula_trash.png" />
+    <Content Include="Imagen\iconos\ico_Grabar.gif" />
+    <Content Include="Imagen\iconos\ico_HojaExcel.gif" />
+    <Content Include="Imagen\iconos\ico_HostTabla.gif" />
+    <Content Include="Imagen\iconos\ico_impresora1.gif" />
+    <Content Include="Imagen\iconos\ico_Impresora2.gif" />
+    <Content Include="Imagen\iconos\ico_Impresora3.gif" />
+    <Content Include="Imagen\iconos\ico_Lupa.gif" />
+    <Content Include="Imagen\iconos\ico_note.png" />
+    <Content Include="Imagen\iconos\ico_noteadd.png" />
+    <Content Include="Imagen\iconos\ico_Nuevo.gif" />
+    <Content Include="Imagen\iconos\ico_OpenDown.gif" />
+    <Content Include="Imagen\iconos\ico_Persona.gif" />
+    <Content Include="Imagen\iconos\ico_Supuesto.gif" />
+    <Content Include="Imagen\iconos\ico_Total.gif" />
+    <Content Include="Imagen\iconos\ico_Verifica.gif" />
+    <Content Include="Imagen\iconos\ico_Vineta1.gif" />
+    <Content Include="Imagen\iconos\ico_Vineta2.gif" />
+    <Content Include="Imagen\iconos\ico_Vineta_Blue1.gif" />
+    <Content Include="Imagen\iconos\ico_Vineta_Red1.gif" />
+    <Content Include="Imagen\Logo\Logo.jpg" />
+    <Content Include="Imagen\Logo\Logo01.png" />
+    <Content Include="Imagen\Logo\tit_Email.gif" />
+    <Content Include="Imagen\Logo\tit_Home.gif" />
+    <Content Include="Imagen\Logo\tit_LineaLogo.gif" />
+    <Content Include="Imagen\Logo\tit_Separador.gif" />
+    <Content Include="Imagen\Logo\UltLogBg.gif" />
+    <Content Include="Imagen\Logo\UltLogCef.gif" />
+    <Content Include="Imagen\mensajes\msj_Cargando.gif" />
+    <Content Include="Imagen\mensajes\msj_ErrorAplicacion.gif" />
+    <Content Include="Imagen\mensajes\msj_SesionFinalizada.gif" />
+    <Content Include="Imagen\mensajes\msj_VolverIngresar.gif" />
+    <Content Include="Imagen\Util\ajax-loader-pik.gif" />
+    <Content Include="Login.aspx" />
+    <Content Include="Login2.aspx" />
+    <Content Include="LoginDoor.aspx" />
+    <Content Include="PagIni\Ajax\ajaxCierreSesion.aspx" />
+    <Content Include="PagIni\Portal.aspx" />
+    <Content Include="PagIni\PortalDefault.aspx" />
+    <Content Include="PagMnt\busBase.aspx" />
+    <Content Include="PagMnt\busCIIU.aspx" />
+    <Content Include="PagMnt\busGrupoEconomico.aspx" />
+    <Content Include="PagMnt\busMetodizado.aspx" />
+    <Content Include="PagMnt\busSeleccionarPeriodo.aspx" />
+    <Content Include="PagMnt\busSeleccionarPeriodoProyeccion.aspx" />
+    <Content Include="PagMnt\busUsuario.aspx" />
+    <Content Include="PagMnt\consCalendario.aspx" />
+    <Content Include="PagMnt\consCruceRCD.aspx" />
+    <Content Include="PagMnt\consCuenta.aspx" />
+    <Content Include="PagMnt\consDescargaData.aspx" />
+    <Content Include="PagMnt\consEmpresasPorCIIU.aspx" />
+    <Content Include="PagMnt\consEmpresasPorGrpEconomico.aspx" />
+    <Content Include="PagMnt\consInformeSBS.aspx" />
+    <Content Include="PagMnt\consParametrica.aspx" />
+    <Content Include="PagMnt\MaskWindowDialogo.aspx" />
+    <Content Include="PagMnt\mcbCorridaMetodizado.aspx" />
+    <Content Include="PagMnt\mcbFormula.aspx" />
+    <Content Include="PagMnt\mcbReconciliacion.aspx" />
+    <Content Include="PagMnt\mcbSupuesto.aspx" />
+    <Content Include="PagMnt\mntAnalisis.aspx" />
+    <Content Include="PagMnt\mntAsociadosCovenant.aspx" />
+    <Content Include="PagMnt\mntAuditor.aspx" />
+    <Content Include="PagMnt\mntBusquedaCliente.aspx" />
+    <Content Include="PagMnt\mntEEFF.aspx" />
+    <Content Include="PagMnt\mntFormulas.aspx" />
+    <Content Include="PagMnt\mntGeneral.aspx" />
+    <Content Include="PagMnt\mntMetodizado.aspx" />
+    <Content Include="PagMnt\mntOperador.aspx" />
+    <Content Include="PagMnt\mntParametro.aspx" />
+    <Content Include="PagMnt\mntPeriodoCuenta.aspx" />
+    <Content Include="PagMnt\mntPeriodoNota.aspx" />
+    <Content Include="PagMnt\mntPeriodoProyeccion.aspx" />
+    <Content Include="PagMnt\mntPeriodoProyeccionProcess1.aspx" />
+    <Content Include="PagMnt\mntProyeccion.aspx" />
+    <Content Include="PagMnt\mntRatios.aspx" />
+    <Content Include="PagMnt\mntRCD.aspx" />
+    <Content Include="PagMnt\mntSupuesto.aspx" />
+    <Content Include="PagMnt\mntTipoCambio.aspx" />
+    <Content Include="PagMnt\mntTipoEEFF.aspx" />
+    <Content Include="PagMnt\mntUsuario.aspx" />
+    <Content Include="PagRpt\dsCruceRCD.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCruceRCD.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PagRpt\dsEmpresasPorCIIU.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmpresasPorCIIU.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PagRpt\dsEmpresasPorGrpEconomico.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEmpresasPorGrpEconomico.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PagRpt\dsFlujoProyectado.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFlujoProyectado.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PagRpt\dsMetodizado.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMetodizado.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PagRpt\dsPrueba.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPrueba.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PagRpt\dsResumenEjecutivo.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsResumenEjecutivo.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PagRpt\rvwCruceRCD.aspx" />
+    <Content Include="PagRpt\rvwEmpresasPorCIIU.aspx" />
+    <Content Include="PagRpt\rvwEmpresasPorGrpEconomico.aspx" />
+    <Content Include="PagRpt\rvwExpDescargaData.aspx" />
+    <Content Include="PagRpt\rvwExpDescargaDataPrioridad.aspx" />
+    <Content Include="PagRpt\rvwExpEmpresasPorCIIU.aspx" />
+    <Content Include="PagRpt\rvwExpEmpresasPorGrpEconomico.aspx" />
+    <Content Include="PagRpt\rvwExpFlujoProyectado.aspx" />
+    <Content Include="PagRpt\rvwExpInformeSBS.aspx" />
+    <Content Include="PagRpt\rvwExpReconciliado.aspx" />
+    <Content Include="PagRpt\rvwExpSupuesto.aspx" />
+    <Content Include="PagRpt\rvwFlujoProyectado.aspx" />
+    <Content Include="PagRpt\rvwMetodizado.aspx" />
+    <Content Include="PagRpt\rvwResumenEjecutivo.aspx" />
+    <Content Include="PagWUC\LeePeriodo.ascx" />
+    <Content Include="PagWUC\Menu.ascx" />
+    <Content Include="PagWUC\Pie.ascx" />
+    <Content Include="PagWUC\Titulo.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebUI.References\AjaxPro.dll" />
+    <Content Include="WebUI.References\Anthem.dll" />
+    <Content Include="WebUI.References\itextsharp.dll" />
+    <EmbeddedResource Include="ErrorPage.aspx.resx">
+      <DependentUpon>ErrorPage.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.aspx.resx">
+      <DependentUpon>Login.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login2.aspx.resx">
+      <DependentUpon>Login2.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginDoor.aspx.resx">
+      <DependentUpon>LoginDoor.aspx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagIni\Ajax\ajaxCierreSeion.aspx.resx">
+      <DependentUpon>ajaxCierreSeion.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagIni\Ajax\ajaxCierreSesion.aspx.resx">
+      <DependentUpon>ajaxCierreSesion.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagIni\Portal.aspx.resx">
+      <DependentUpon>Portal.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagIni\PortalDefault.aspx.resx">
+      <DependentUpon>PortalDefault.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\busBase.aspx.resx">
+      <DependentUpon>busBase.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\busCIIU.aspx.resx">
+      <DependentUpon>busCIIU.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\busGrupoEconomico.aspx.resx">
+      <DependentUpon>busGrupoEconomico.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\busMetodizado.aspx.resx">
+      <DependentUpon>busMetodizado.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\busSeleccionarPeriodo.aspx.resx">
+      <DependentUpon>busSeleccionarPeriodo.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\busSeleccionarPeriodoProyeccion.aspx.resx">
+      <DependentUpon>busSeleccionarPeriodoProyeccion.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\busUsuario.aspx.resx">
+      <DependentUpon>busUsuario.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\consCalendario.aspx.resx">
+      <DependentUpon>consCalendario.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\consCruceRCD.aspx.resx">
+      <DependentUpon>consCruceRCD.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\consCuenta.aspx.resx">
+      <DependentUpon>consCuenta.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\consDescargaData.aspx.resx">
+      <DependentUpon>consDescargaData.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\consEmpresasPorCIIU.aspx.resx">
+      <DependentUpon>consEmpresasPorCIIU.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\consEmpresasPorGrpEconomico.aspx.resx">
+      <DependentUpon>consEmpresasPorGrpEconomico.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\consInformeSBS.aspx.resx">
+      <DependentUpon>consInformeSBS.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\consParametrica.aspx.resx">
+      <DependentUpon>consParametrica.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\MaskWindowDialogo.aspx.resx">
+      <DependentUpon>MaskWindowDialogo.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\mcbCorridaMetodizado.aspx.resx">
+      <DependentUpon>mcbCorridaMetodizado.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\mcbReconciliacion.aspx.resx">
+      <DependentUpon>mcbReconciliacion.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\mcbSupuesto.aspx.resx">
+      <DependentUpon>mcbSupuesto.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\mntAnalisis.aspx.resx">
+      <DependentUpon>mntAnalisis.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\mntAuditor.aspx.resx">
+      <DependentUpon>mntAuditor.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\mntEEFF.aspx.resx">
+      <DependentUpon>mntEEFF.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\mntGeneral.aspx.resx">
+      <DependentUpon>mntGeneral.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\mntMetodizado.aspx.resx">
+      <DependentUpon>mntMetodizado.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\mntOperador.aspx.resx">
+      <DependentUpon>mntOperador.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\mntParametro.aspx.resx">
+      <DependentUpon>mntParametro.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\mntPeriodoCuenta.aspx.resx">
+      <DependentUpon>mntPeriodoCuenta.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\mntPeriodoNota.aspx.resx">
+      <DependentUpon>mntPeriodoNota.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\mntPeriodoProyeccion.aspx.resx">
+      <DependentUpon>mntPeriodoProyeccion.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\mntPeriodoProyeccionProcess1.aspx.resx">
+      <DependentUpon>mntPeriodoProyeccionProcess1.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\mntProyeccion.aspx.resx">
+      <DependentUpon>mntProyeccion.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\mntRCD.aspx.resx">
+      <DependentUpon>mntRCD.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\mntSupuesto.aspx.resx">
+      <DependentUpon>mntSupuesto.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\mntTipoCambio.aspx.resx">
+      <DependentUpon>mntTipoCambio.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\mntTipoEEFF.aspx.resx">
+      <DependentUpon>mntTipoEEFF.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagMnt\mntUsuario.aspx.resx">
+      <DependentUpon>mntUsuario.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\repCruceRCD.resx">
+      <DependentUpon>repCruceRCD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\repCruceRCD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>repCruceRCD.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\repEmpresasPorCIIU.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>repEmpresasPorCIIU.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\repEmpresasPorGrpEconomico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>repEmpresasPorGrpEconomico.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\repFlujoProyectado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>repFlujoProyectado.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\repMetodizadoH.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>repMetodizadoH1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\repMetodizadoH1.resx">
+      <DependentUpon>repMetodizadoH1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\repMetodizadoH2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>repMetodizadoH2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\repMetodizadoV.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>repMetodizadoV1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\repMetodizadoV1.resx">
+      <DependentUpon>repMetodizadoV1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\repMetodizadoV_BPE.resx">
+      <DependentUpon>repMetodizadoV_BPE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\repMetodizadoV_BPE.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>repMetodizadoV_BPE.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\repResumenEjecutivo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>repResumenEjecutivo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\rvwCruceRCD.aspx.resx">
+      <DependentUpon>rvwCruceRCD.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\rvwEmpresasPorCIIU.aspx.resx">
+      <DependentUpon>rvwEmpresasPorCIIU.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\rvwEmpresasPorGrpEconomico.aspx.resx">
+      <DependentUpon>rvwEmpresasPorGrpEconomico.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\rvwExpDescargaData.aspx.resx">
+      <DependentUpon>rvwExpDescargaData.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\rvwExpDescargaDataPrioridad.aspx.resx">
+      <DependentUpon>rvwExpDescargaDataPrioridad.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\rvwExpEmpresasPorCIIU.aspx.resx">
+      <DependentUpon>rvwExpEmpresasPorCIIU.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\rvwExpEmpresasPorGrpEconomico.aspx.resx">
+      <DependentUpon>rvwExpEmpresasPorGrpEconomico.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\rvwExpFlujoProyectado.aspx.resx">
+      <DependentUpon>rvwExpFlujoProyectado.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\rvwExpInformeSBS.aspx.resx">
+      <DependentUpon>rvwExpInformeSBS.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\rvwExpReconciliado.aspx.resx">
+      <DependentUpon>rvwExpReconciliado.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\rvwExpSupuesto.aspx.resx">
+      <DependentUpon>rvwExpSupuesto.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\rvwFlujoProyectado.aspx.resx">
+      <DependentUpon>rvwFlujoProyectado.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\rvwMetodizado.aspx.resx">
+      <DependentUpon>rvwMetodizado.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\rvwResumenEjecutivo.aspx.resx">
+      <DependentUpon>rvwResumenEjecutivo.aspx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\SubReportesH\CovenantParametro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CovenantParametro.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\SubReportesH\Detalle_Formula.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Detalle_Formula.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\SubReportesH\EEFF_Sub_BalanceGeneral.resx">
+      <DependentUpon>EEFF_Sub_BalanceGeneral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\SubReportesH\EEFF_Sub_BalanceGeneral.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EEFF_Sub_BalanceGeneral.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\SubReportesH\EEFF_Sub_EstadodeGananciasyPerdidas.resx">
+      <DependentUpon>EEFF_Sub_EstadodeGananciasyPerdidas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\SubReportesH\EEFF_Sub_EstadodeGananciasyPerdidas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EEFF_Sub_EstadodeGananciasyPerdidas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\SubReportesV\EEFF_Sub_DesglosedeCuentasImportantes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EEFF_Sub_DesglosedeCuentasImportantes.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\SubReportesV\EEFF_Sub_FuentesyUsosdeFondos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EEFF_Sub_FuentesyUsosdeFondos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\SubReportesV\EEFF_Sub_ReconciliacionPatrimonioyActivoFijo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EEFF_Sub_ReconciliacionPatrimonioyActivoFijo.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\SubReportesV\RatiosFinancieros.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RatiosFinancieros.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\SubReportesV\RatiosFinancieros_Devaluacion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RatiosFinancieros_Devaluacion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\SubReportesV\RatiosFinancieros_GradoExposicion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RatiosFinancieros_GradoExposicion.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\SubReportesV\Riesgo_Camb_Sub_FuentesyUsosdeFondosPorMoneda.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Riesgo_Camb_Sub_FuentesyUsosdeFondosPorMoneda.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\SubReportesV\Riesgo_Camb_Sub_FuentesyUsosdeFondosPorMoneda_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Riesgo_Camb_Sub_FuentesyUsosdeFondosPorMoneda_2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\SubReportesV\Riesgo_Camb_Sub_FuentesyUsosdeFondosPorMoneda_3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Riesgo_Camb_Sub_FuentesyUsosdeFondosPorMoneda_3.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\SubReportesV\SNotas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SNotas.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagRpt\SubReportesV\SNotasBalance.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SNotasBalance.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagWUC\LeePeriodo.ascx.resx">
+      <DependentUpon>LeePeriodo.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagWUC\Menu.ascx.resx">
+      <DependentUpon>Menu.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagWUC\Pie.ascx.resx">
+      <DependentUpon>Pie.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagWUC\Titulo.ascx.resx">
+      <DependentUpon>Titulo.ascx.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="PagRpt\dsCruceRCD.xsx">
+      <DependentUpon>dsCruceRCD.xsd</DependentUpon>
+    </None>
+    <None Include="PagRpt\dsEmpresasPorCIIU.xsx">
+      <DependentUpon>dsEmpresasPorCIIU.xsd</DependentUpon>
+    </None>
+    <None Include="PagRpt\dsEmpresasPorGrpEconomico.xsx">
+      <DependentUpon>dsEmpresasPorGrpEconomico.xsd</DependentUpon>
+    </None>
+    <None Include="PagRpt\dsFlujoProyectado.xsx">
+      <DependentUpon>dsFlujoProyectado.xsd</DependentUpon>
+    </None>
+    <None Include="PagRpt\dsMetodizado.xsc">
+      <DependentUpon>dsMetodizado.xsd</DependentUpon>
+    </None>
+    <None Include="PagRpt\dsMetodizado.xss">
+      <DependentUpon>dsMetodizado.xsd</DependentUpon>
+    </None>
+    <None Include="PagRpt\dsMetodizado.xsx">
+      <DependentUpon>dsMetodizado.xsd</DependentUpon>
+    </None>
+    <None Include="PagRpt\dsPrueba.xsc">
+      <DependentUpon>dsPrueba.xsd</DependentUpon>
+    </None>
+    <None Include="PagRpt\dsPrueba.xss">
+      <DependentUpon>dsPrueba.xsd</DependentUpon>
+    </None>
+    <None Include="PagRpt\dsPrueba.xsx">
+      <DependentUpon>dsPrueba.xsd</DependentUpon>
+    </None>
+    <None Include="PagRpt\dsResumenEjecutivo.xsx">
+      <DependentUpon>dsResumenEjecutivo.xsd</DependentUpon>
+    </None>
+    <None Include="PagRpt\dsSubReportCovenant.xsc">
+      <DependentUpon>dsSubReportCovenant.xsd</DependentUpon>
+    </None>
+    <Content Include="PagRpt\dsSubReportCovenant.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSubReportCovenant.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="PagRpt\dsSubReportCovenant.xss">
+      <DependentUpon>dsSubReportCovenant.xsd</DependentUpon>
+    </None>
+    <None Include="PagRpt\SubReportesH\vssver2.scc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    <Service Include="{CF845C55-C321-4742-B673-E6212D061ED9}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagen\botones\" />
+    <Folder Include="Imagen\titulos\" />
+    <Folder Include="Logs\" />
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>37993</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/CEFWebUIProjects_WebUI</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties TDLFILE="DAP.tdl" TDLELEMENTTYPE="WebUI" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+</Project>

@@ -1,0 +1,599 @@
+BODY
+{
+    margin: 0px 0px 0px 0px;
+    font-family: tahoma,sans-serif;
+    font-size: 11px;
+    color: black;
+}
+TABLE
+{
+	 border-width: 0px;
+	 height: 20px
+}
+TD
+{
+    text-indent: 0pt
+}
+TH
+{ 
+    background-color: #568ed1;
+    font-size: 11px;
+    text-align: center;
+    height: 23px;
+    color: white
+}
+.Marco
+{
+	border: solid 1px #969EA8
+}
+.TituloLst
+{
+    font-family: tahoma,sans-serif;
+    font-size: 12pt;
+    font-weight: bolder;
+    background-color: #639ace;
+    color: white
+}
+.Criterio
+{
+    font-family: tahoma,sans-serif;
+    font-size: 11px;
+    /*height: 25px;*/
+    background-color: #f1f8fe;
+    color: Black
+}
+.GridMnt
+{
+	background-color:White;
+	border-color:#3366CC;
+	border-width:1px;
+	border-style:None;
+	border-collapse:collapse;
+}
+.CabeceraRegistro
+{
+    font-family: tahoma,sans-serif;
+    font-size: 11px;
+    text-align: center;
+    height: 23px;
+    background-color: #568ed1;
+    color: white;
+    font-weight: bold;
+    cursor: default
+}
+.Registro
+{
+    font-family: tahoma,sans-serif;
+    font-size: 10px;
+    height: 10px;
+    background-color: White;
+    color: black
+}
+.Selector
+{
+    font-family: tahoma,sans-serif;
+    font-size: 11px;
+    height: 23px;
+    cursor: hand;
+    background-color: #87CEEB;
+    color: black
+}
+.RegSeleccion
+{
+    font-family: tahoma,sans-serif;
+    font-size: 11px;
+    height: 23px;
+    background-color: #FEE671;
+    color: black
+}
+.CabColNoSeleccion
+{
+    font-family: tahoma,sans-serif;
+    font-size: 11px;
+    height: 23px;
+    background-color: White;
+    color: Black
+}
+
+.ColNoSeleccion
+{
+    font-family: tahoma,sans-serif;
+    font-size: 11px;
+    height: 23px;
+    background-color: #568ed1;
+    color: White
+}
+
+.ColNoSeleccion2
+{
+    font-family: tahoma,sans-serif;
+    font-size: 11px;
+    /*height: 23px;*/
+    background-color: #568ed1;
+    color: White
+}
+.CabColSeleccion
+{
+    font-family: tahoma,sans-serif;
+    font-size: 11px;
+    height: 23px;
+    background-color: #fad163;
+    color: Black
+}
+.ColSeleccion
+{
+    font-family: tahoma,sans-serif;
+    font-size: 11px;
+    height: 23px;
+    background-color: #fef7d7;
+    color: Black
+}
+.PieRegistro
+{
+    font-family: tahoma,sans-serif;
+    font-size: 11px;
+    font-weight: bolder;
+    height: 23px;
+    background-color: #E3E3E3;
+    color: 000000
+}
+.Paginacion
+{
+	font-family: tahoma,sans-serif;
+	font-size: 14px;
+	height: 21px;
+	color: Red
+}
+.MsjError
+{
+	font-size: 11px;
+	color: red;
+	font-family: tahoma,sans-serif;
+	text-align: left;
+}
+.MsjExitoso
+{
+	font-weight: bold;
+	font-size: 11px;
+	color: SteelBlue;
+	font-family: tahoma,sans-serif;
+	text-align: left;
+}
+INPUT.NoActivo
+{
+	border: #a9cfeb 1px solid;
+	color: 003366;
+	font-family: tahoma,sans-serif;
+	background-color: #e8f1f8;
+	font-size: 10px;
+	height: 21px;
+}
+INPUT.Activo
+{
+	border: #a9cfeb 1px solid;
+	color: Black;
+	font-family: tahoma,sans-serif;
+	background-color: White;
+	font-size: 10px;
+	height: 21px;
+}
+INPUT.Fecha
+{
+	border: #a9cfeb 1px solid;
+	color: Black;
+	font-family:Arial;
+	background-color: White;
+	font-size: 12px;
+	height: 20px;
+}
+INPUT.Activo2
+{
+	border: #a9cfeb 1px solid;
+	color: Black;
+	font-family: tahoma,sans-serif;
+	background-color: White;
+	font-size: 10px;
+	height: 21px;
+	text-align:right;
+}
+
+INPUT.NoActivoEnGrid
+{
+	border-right: #EEEEEE 0px solid;
+	border-top: #EEEEEE 0px solid;
+	border-left: #EEEEEE 0px solid;
+	border-bottom: #EEEEEE 0px solid;
+	font-family: tahoma,sans-serif;
+	background-color: Transparent;
+	font-size: 10px;
+	height: 23px;
+}
+INPUT.ActivoNumericoColSel
+{
+	text-align: right;
+	border: #fad163 1px solid;
+	color: Black;
+	font-family: tahoma,sans-serif;
+	background-color: Transparent;
+	font-size: 10px;
+	height: 21px;
+}
+INPUT.NoActivoTotalColSel
+{
+	text-align: right;
+	border: Transparent 0px solid;
+	color: Black;
+	font-family: tahoma,sans-serif;
+	background-color: Transparent;
+	font-size: 10px;
+	height: 21px;
+	font-weight: bold;
+}
+INPUT.ActivoFuncionFx
+{
+	border: Black 1px solid;
+	color: Black;
+	font-family: tahoma,sans-serif;
+	background-color: White;
+	font-size: 10px;
+	height: 21px;
+}
+TEXTAREA.NoActivo {  
+    color: 003366;
+	font-family: tahoma,sans-serif;
+	background-color: #e8f1f8
+}
+.PanelRadl
+{
+	border-right: 1px Ridge gainsboro;
+	border-top: 1px Ridge gainsboro;
+	border-left: 1px Ridge gainsboro;
+	border-bottom: 1px Ridge gainsboro;
+	font-size: 11px;
+	font-family: tahoma,sans-serif;
+	background-color: whitesmoke;
+}
+A:link
+{
+    color: Black; text-decoration: none
+}
+A:visited
+{
+	 color: Black; text-decoration: none
+}
+A:hover
+{
+	 color: Black; text-decoration: underline
+}
+A:active
+{
+	 color: Black; text-decoration: none
+}
+.Boton
+{
+	border-right: #000000 1px solid;
+	border-top: #000000 1px solid;
+	font-size: 11px;
+	background-image: url(../imagen/fondos/bgcolor.gif);
+	border-left: #000000 1px solid;
+	cursor: hand;
+	border-bottom: #000000 1px solid;
+	font-family: tahoma,sans-serif;
+	height: 20px;
+	text-decoration: none;
+}
+.BotonCerrar
+{
+	cursor: hand;
+	border-width: 0px
+}
+.lightblueborder 
+{
+	background-color: #a9cfeb
+}
+.lightbluebg 
+{
+	background-color: #e8f1f8
+}
+.lightLTbluebg 
+{
+	background-color: #f1f8fe
+}
+.bottombluebg 
+{
+	background-color: #d1e5f2
+}
+.SearchResultsHeader 
+{
+	font-weight: bold;
+	color: #003366;
+	font-family: tahoma,sans-serif;
+    font-size: 13px
+}
+.TabBar
+{
+    font-family: tahoma,sans-serif;
+    font-size: 11px;
+    height: 20px;	
+    background-color: #E8F1F8;
+    color: #000000
+}
+.TabActivo
+{
+	font-weight: bold;
+	color: #003366;
+	font-family: tahoma,sans-serif;
+    font-size: 11px;
+    cursor: hand;
+    text-align: center;
+	/* background-image: url(../imagen/bordes/brd_TabActivo_blue.gif); */
+}
+.TabNoActivo
+{
+	color: #003366;
+	font-family: tahoma,sans-serif;
+    font-size: 11px;
+    cursor: hand;
+    text-align: center
+}
+.LabelTabActivo
+{
+	font-weight: bold;
+	color: #003366;
+	font-family: tahoma,sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: hand;
+    text-align: center;
+}
+.LabelTabNoActivo
+{
+	color: #003366;
+	font-family: tahoma,sans-serif;
+    font-size: 10px;
+    font-weight:normal;
+    cursor: hand;
+    text-align: center;
+}
+.Leyenda
+{
+    font-family: tahoma,sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #EAFDD3;
+    color: #000000;
+    border: solid 2px #969EA8
+}
+.Pie
+{
+    font-family: tahoma,sans-serif;
+    font-size: 11px;
+    color: #003366;
+}
+.Pie A
+{
+	color: #003366
+}
+.Pie A:hover
+{
+	color: #003366
+}
+.Pie A:visited
+{
+	color: #003366
+}
+.Terminos
+{
+    font-family: tahoma,sans-serif;
+    font-size: 11px;
+    color: #000;
+    border-top: solid 1px #308BB7
+}
+.Terminos A
+{
+	color: #000
+}
+.Terminos A:hover
+{
+	color: #000
+}
+.Terminos A:visited
+{
+	color: #000
+}
+.LetraT11 
+{
+    font-family: tahoma,sans-serif;
+    font-size: 11px;
+	color: black
+}
+.LetraT11 A 
+{
+	color: black
+}
+.LetraT11 A:hover 
+{
+	color: black
+}
+.LetraT11 A:visited 
+{
+	color: black
+}
+.LetraT11B
+{
+    font-family: tahoma,sans-serif;
+    font-size: 11px;
+    font-weight: bolder;
+	color: black
+}
+.AlineacionDerecha
+{
+	text-align: right
+}
+.EfectoImagen
+{
+	cursor: hand;
+	border-width: 0px;
+}
+.Barra
+{
+    scrollbar-face-color: #d1e5f2;
+    scrollbar-highlight-color: #003366;
+    scrollbar-shadow-color: #003366;
+    scrollbar-3DLIGHT-color: #ffffff;
+    scrollbar-arrow-color: #003366;
+    scrollbar-track-color: #ecf0f9;
+    scrollbar-darkshadow-color: #ffffff;
+    scrollbar-base-color: #ffffff;
+}
+/* Contenedor de datagrid con scroll */
+DIV.Grid
+{
+	OVERFLOW: auto;
+    scrollbar-face-color: #d1e5f2;
+    scrollbar-highlight-color: #003366;
+    scrollbar-shadow-color: #003366;
+    scrollbar-3DLIGHT-color: #ffffff;
+    scrollbar-arrow-color: #003366;
+    scrollbar-track-color: #ecf0f9;
+    scrollbar-darkshadow-color: #ffffff;
+    scrollbar-base-color: #ffffff
+}
+/* Bloquea la columna */
+DIV.Grid TD.locked, DIV.Grid TH.locked
+{
+    font-family: tahoma,sans-serif;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    height: 23px;
+    background-color: #568ed1;
+    color: black;
+	position:relative;
+	cursor: default;
+	/*solo para IE5 o superior*/
+	left: expression(document.getElementById(this.parentElement.parentElement.parentElement.parentElement.id).scrollLeft-2)
+}
+/* Bloquea la cabecera */
+DIV.Grid TH
+{
+    font-family: tahoma,sans-serif;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    height: 23px;
+    background-color: #568ed1;
+    color: white;
+	position:relative;
+	cursor: default;
+	/*solo para IE5 o superior*/
+	top: expression(document.getElementById(this.parentElement.parentElement.parentElement.parentElement.id).scrollTop-2);
+	z-index: 10
+}
+/* Mantiene la cabecera en la posición top */
+DIV.Grid TH.locked
+{
+	z-index: 99
+}
+
+.PopUpLabel
+{
+    font-family: tahoma,sans-serif;
+    font-size: 11px;
+    color:Black;
+}
+
+.modalBackground {
+	background-color:Gray;
+	filter:alpha(opacity=28);
+	opacity:0.28;
+}
+
+.modalPopup {
+	background-color:#F5F5F4;
+	border-width:1px;
+	border-style:solid;
+	border-color:Black;
+	color:Black;
+	padding:3px;
+}
+
+.banner{
+    width: 100%;
+    height: 70px;
+    font: Verdana;
+    font-size: 9pt;
+    color:#142451;
+}
+
+.banner_logo
+{
+    border-left: solid 1px #EEEEEE;
+    border-top: solid 1px #EEEEEE;
+}
+
+.banner_tituloSistema
+{
+    text-align:center;
+    font-size:10.1pt;
+    font-weight:bold;
+    padding: 14px 0px 0px 7px;
+    vertical-align:top;
+    height:35px;
+}
+
+.banner_login
+{
+    vertical-align:bottom;
+    text-align:left;
+    font-size:7pt;
+    height:19px;
+}
+
+.banner_usuario
+{
+    padding: 0px 0px 0px 21px;
+    width: 280px;
+}
+
+.banner_perfil
+{
+    padding: 0px 0px 0px 7px;
+    width: 210px;
+}
+
+.banner_salir
+{
+    text-align:right;
+    padding: 0px 9px 0px 0px;
+}
+
+.banner_salir a
+{
+    color:#142451;
+    text-decoration:none;
+}
+
+.banner_salir a:hover
+{
+    color:#000000;
+}
+
+.itemStyleTemplate
+{
+   height : 100%;
+   width : 100%;		
+}
+
+.itemStyleTemplate_2
+{
+   height : 0%;
+   width :  0%;		
+}
+
+/*I-XT9104 - 18/02/2020*/
+.borderRed
+{
+    border: solid 2px red;
+}
+/*F-XT9104 - 18/02/2020*/

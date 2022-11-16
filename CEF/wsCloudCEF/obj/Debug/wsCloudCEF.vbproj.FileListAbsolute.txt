@@ -1,0 +1,13 @@
+C:\Compartida\Fuentes2021\CEF_FRW4\CEF\wsCloudCEF\bin\CEF.wsCloudCEF.dll
+C:\Compartida\Fuentes2021\CEF_FRW4\CEF\wsCloudCEF\bin\CEF.wsCloudCEF.pdb
+C:\Compartida\Fuentes2021\CEF_FRW4\CEF\wsCloudCEF\bin\CEF.WebControls.dll
+C:\Compartida\Fuentes2021\CEF_FRW4\CEF\wsCloudCEF\bin\CEF.WebControls.pdb
+C:\Compartida\Fuentes2021\CEF_FRW4\CEF\wsCloudCEF\obj\Debug\wsCloudCEF.vbprojResolveAssemblyReference.cache
+C:\Compartida\Fuentes2021\CEF_FRW4\CEF\wsCloudCEF\obj\Debug\Resources.resources
+C:\Compartida\Fuentes2021\CEF_FRW4\CEF\wsCloudCEF\obj\Debug\wsCloudCEF.vbproj.GenerateResource.Cache
+C:\Compartida\Fuentes2021\CEF_FRW4\CEF\wsCloudCEF\obj\Debug\CEF.wsCloudCEF.dll
+C:\Compartida\Fuentes2021\CEF_FRW4\CEF\wsCloudCEF\obj\Debug\CEF.wsCloudCEF.pdb
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\wsCloudCEF\obj\Debug\wsCloudCEF.vbproj.AssemblyReference.cache
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\wsCloudCEF\obj\Debug\Resources.resources
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\wsCloudCEF\obj\Debug\wsCloudCEF.vbproj.GenerateResource.cache
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\wsCloudCEF\obj\Debug\wsCloudCEF.vbproj.CoreCompileInputs.cache

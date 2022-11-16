@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Este archivo lo genera de forma automática el diseñador de esquemas XML. Contiene información de diseño para componentes de la superficie de diseño.-->
+<XSDDesignerLayout layoutVersion="2" viewPortLeft="-3646" viewPortTop="0" zoom="100">
+    <EEFFValidacion_XmlElement left="-2963" top="1508" width="11853" height="5503" selected="0" zOrder="1" index="0" expanded="1" />
+    <EEFFPendientesValidacion_XmlElement left="-1800" top="7355" width="12013" height="4657" selected="0" zOrder="2" index="1" expanded="1" />
+</XSDDesignerLayout>

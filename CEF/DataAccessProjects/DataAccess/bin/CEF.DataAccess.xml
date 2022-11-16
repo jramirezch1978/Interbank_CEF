@@ -1,0 +1,343 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+CEF.DataAccess
+</name>
+</assembly>
+<members>
+<member name="T:wsRCC.bpsWebService">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.#ctor">
+<remarks/>
+</member>
+<member name="E:wsRCC.bpsWebService.Get_Sel_Cuest_SolicitudCompleted">
+<remarks/>
+</member>
+<member name="E:wsRCC.bpsWebService.Get_InformacionExternaCompleted">
+<remarks/>
+</member>
+<member name="E:wsRCC.bpsWebService.Get_CodigoSBSCompleted">
+<remarks/>
+</member>
+<member name="E:wsRCC.bpsWebService.Get_ListadoDeudaRCCCompleted">
+<remarks/>
+</member>
+<member name="E:wsRCC.bpsWebService.Set_CalcularScoringCompleted">
+<remarks/>
+</member>
+<member name="E:wsRCC.bpsWebService.Get_CuestionarioXmlCompleted">
+<remarks/>
+</member>
+<member name="E:wsRCC.bpsWebService.Set_CuestionarioSolicitudCompleted">
+<remarks/>
+</member>
+<member name="E:wsRCC.bpsWebService.Get_Lst_Sist_Model_Area_ValorCompleted">
+<remarks/>
+</member>
+<member name="E:wsRCC.bpsWebService.Get_List_Cuest_SolicitudDetalleCompleted">
+<remarks/>
+</member>
+<member name="E:wsRCC.bpsWebService.Get_ComportamientoXmlCompleted">
+<remarks/>
+</member>
+<member name="E:wsRCC.bpsWebService.Get_ComportamientoDetXmlCompleted">
+<remarks/>
+</member>
+<member name="E:wsRCC.bpsWebService.Get_ConexionCompleted">
+<remarks/>
+</member>
+<member name="E:wsRCC.bpsWebService.Get_ConexionBPSCompleted">
+<remarks/>
+</member>
+<member name="E:wsRCC.bpsWebService.Get_BPSConexionWSCompleted">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_Sel_Cuest_Solicitud(System.Int32)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_Sel_Cuest_SolicitudAsync(System.Int32)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_Sel_Cuest_SolicitudAsync(System.Int32,System.Object)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_InformacionExterna(System.String,System.String,System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_InformacionExternaAsync(System.String,System.String,System.Xml.XmlNode)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_InformacionExternaAsync(System.String,System.String,System.Xml.XmlNode,System.Object)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_CodigoSBS(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_CodigoSBSAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_CodigoSBSAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_ListadoDeudaRCC(System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_ListadoDeudaRCCAsync(System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_ListadoDeudaRCCAsync(System.String,System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Set_CalcularScoring(System.Int32,System.Int32,System.String,System.Xml.XmlNode,System.Xml.XmlNode,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Set_CalcularScoringAsync(System.Int32,System.Int32,System.String,System.Xml.XmlNode,System.Xml.XmlNode,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Set_CalcularScoringAsync(System.Int32,System.Int32,System.String,System.Xml.XmlNode,System.Xml.XmlNode,System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_CuestionarioXml(System.Int32,System.Int32,System.Int32,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_CuestionarioXmlAsync(System.Int32,System.Int32,System.Int32,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_CuestionarioXmlAsync(System.Int32,System.Int32,System.Int32,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Set_CuestionarioSolicitud(System.Int32,System.Int32,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Set_CuestionarioSolicitudAsync(System.Int32,System.Int32,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Set_CuestionarioSolicitudAsync(System.Int32,System.Int32,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_Lst_Sist_Model_Area_Valor">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_Lst_Sist_Model_Area_ValorAsync">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_Lst_Sist_Model_Area_ValorAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_List_Cuest_SolicitudDetalle(System.Int32,System.Int32,System.String,System.Int32,System.Int32)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_List_Cuest_SolicitudDetalleAsync(System.Int32,System.Int32,System.String,System.Int32,System.Int32)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_List_Cuest_SolicitudDetalleAsync(System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.Object)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_ComportamientoXml(System.Int32,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_ComportamientoXmlAsync(System.Int32,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_ComportamientoXmlAsync(System.Int32,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_ComportamientoDetXml(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_ComportamientoDetXmlAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_ComportamientoDetXmlAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_Conexion(System.Int32,System.String,System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_ConexionAsync(System.Int32,System.String,System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_ConexionAsync(System.Int32,System.String,System.String,System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_ConexionBPS(System.Int32,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_ConexionBPSAsync(System.Int32,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_ConexionBPSAsync(System.Int32,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_BPSConexionWS(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_BPSConexionWSAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.Get_BPSConexionWSAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:wsRCC.bpsWebService.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_Sel_Cuest_SolicitudCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_Sel_Cuest_SolicitudCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:wsRCC.Get_Sel_Cuest_SolicitudCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_InformacionExternaCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_InformacionExternaCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:wsRCC.Get_InformacionExternaCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_CodigoSBSCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_CodigoSBSCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:wsRCC.Get_CodigoSBSCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_ListadoDeudaRCCCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_ListadoDeudaRCCCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:wsRCC.Get_ListadoDeudaRCCCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:wsRCC.Set_CalcularScoringCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:wsRCC.Set_CalcularScoringCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:wsRCC.Set_CalcularScoringCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_CuestionarioXmlCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_CuestionarioXmlCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:wsRCC.Get_CuestionarioXmlCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:wsRCC.Set_CuestionarioSolicitudCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:wsRCC.Set_CuestionarioSolicitudCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:wsRCC.Set_CuestionarioSolicitudCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_Lst_Sist_Model_Area_ValorCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_Lst_Sist_Model_Area_ValorCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:wsRCC.Get_Lst_Sist_Model_Area_ValorCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_List_Cuest_SolicitudDetalleCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_List_Cuest_SolicitudDetalleCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:wsRCC.Get_List_Cuest_SolicitudDetalleCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_ComportamientoXmlCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_ComportamientoXmlCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:wsRCC.Get_ComportamientoXmlCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_ComportamientoDetXmlCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_ComportamientoDetXmlCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:wsRCC.Get_ComportamientoDetXmlCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_ConexionCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_ConexionCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:wsRCC.Get_ConexionCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_ConexionBPSCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_ConexionBPSCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:wsRCC.Get_ConexionBPSCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_BPSConexionWSCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:wsRCC.Get_BPSConexionWSCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:wsRCC.Get_BPSConexionWSCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:wsRM.bseFCDO002">
+<remarks/>
+</member>
+<member name="M:wsRM.bseFCDO002.#ctor">
+<remarks/>
+</member>
+<member name="E:wsRM.bseFCDO002.fConsultarClienteCompleted">
+<remarks/>
+</member>
+<member name="M:wsRM.bseFCDO002.fConsultarCliente(System.String,System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRM.bseFCDO002.fConsultarClienteAsync(System.String,System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:wsRM.bseFCDO002.fConsultarClienteAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:wsRM.bseFCDO002.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:wsRM.fConsultarClienteCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:wsRM.fConsultarClienteCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:wsRM.fConsultarClienteCompletedEventArgs.Result">
+<remarks/>
+</member>
+</members>
+</doc>

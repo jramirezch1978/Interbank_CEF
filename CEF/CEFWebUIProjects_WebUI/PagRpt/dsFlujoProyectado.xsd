@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsFlujoProyectado" targetNamespace="http://tempuri.org/dsFlujoProyectado.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/dsFlujoProyectado.xsd"
+	xmlns:mstns="http://tempuri.org/dsFlujoProyectado.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dsFlujoProyectado" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="FlujoProyectadoSupuesto">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CodAnalisis" type="xs:int" minOccurs="0" />
+							<xs:element name="CodEeff" type="xs:int" minOccurs="0" />
+							<xs:element name="CodCuentaSupuesto" type="xs:int" minOccurs="0" />
+							<xs:element name="Descripcion" type="xs:string" minOccurs="0" />
+							<xs:element name="CodTipoCuenta" type="xs:int" minOccurs="0" />
+							<xs:element name="ImporteHistorico" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ImporteProyectado1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ImporteProyectado2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ImporteProyectado3" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ImporteProyectado4" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ImporteProyectado5" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="FlujoProyectadoCabecera">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CUCliente" type="xs:string" minOccurs="0" />
+							<xs:element name="RUC" type="xs:string" minOccurs="0" />
+							<xs:element name="RazonSocial" type="xs:string" minOccurs="0" />
+							<xs:element name="Cifras" type="xs:string" minOccurs="0" />
+							<xs:element name="NombreUsuario" type="xs:string" minOccurs="0" />
+							<xs:element name="CodTipoEeff" type="xs:int" minOccurs="0" />
+							<xs:element name="FecHistorico" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="Auditor" type="xs:string" minOccurs="0" />
+							<xs:element name="FecProyectado1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FecProyectado2" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FecProyectado3" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FecProyectado4" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="FecProyectado5" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DescripcionSupuesto" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

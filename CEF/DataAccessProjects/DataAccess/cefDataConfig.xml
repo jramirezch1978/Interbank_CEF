@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuracion>
+	<CadenaConexion>
+		<!--<add key="IBCef" value="Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=IBCef;Data Source=CP03_S25739XP;" /> -->
+		<!--<add key="IBCef" value="Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=IBCef;Data Source=S01RD;" /> -->
+		<add key="IBCef" value="Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=IBCef;Data Source=S32514CCP4WXP;" />
+		<add key="Log" value="D:\Sda\Log\Cef\" />
+	</CadenaConexion>
+</Configuracion>

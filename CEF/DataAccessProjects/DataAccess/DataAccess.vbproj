@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <OwnerKey>{FE3BBBB6-72D5-11d2-9ACE-00C04F79A2A4}</OwnerKey>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{19458B80-677C-44B9-BA57-E712A04FBDA6}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>CEF.DataAccess</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>
+    </RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CEF.DataAccess.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CEF.DataAccess.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>Full</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Name>System.EnterpriseServices</Name>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acceso.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Analisis.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Auditor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CIIU.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cliente.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CorridaMetodizado.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuenta.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CuentaAnalisis.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CuentaSupuesto.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataConfig.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EEFF.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Formula.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FormulaCovenant.vb" />
+    <Compile Include="FormulaParametro.vb" />
+    <Compile Include="General.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Globals.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GrupoEconomico.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ManejadorBD.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MenuDinamico.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Metodizado.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetodizadoAsociado.vb" />
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Operador.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parametro.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Perfil.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PeriodoCorrida.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PeriodoCuentaAnalisis.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PeriodoNota.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Permiso.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProyeccionCuentaDA.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProyeccionDA.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RCD.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RegistroClaveWin.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServiceExternalData.vb" />
+    <Compile Include="Supuesto.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoCambio.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoEEFF.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Usuario.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VariableFormula.vb" />
+    <Compile Include="Web References\wsRCC\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsRM\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Content Include="cefDataConfig.xml" />
+    <None Include="Web References\wsRCC\bpsWebService.disco" />
+    <None Include="Web References\wsRM\bseFCDO002.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusinessFacadeProjects\Common\Common.vbproj">
+      <Project>{073EC36A-2483-47D8-9242-FC035463FA5C}</Project>
+      <Name>Common</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BusinessRulesProjects\BusinessEntity\BusinessEntity.vbproj">
+      <Project>{8EF8AEE9-D3C2-4ACC-922D-64018646BCE3}</Project>
+      <Name>BusinessEntity</Name>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://s235va2/fcdws/bseFCDO002.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsRM\</RelPath>
+      <UpdateFromURL>http://s235va2/fcdws/bseFCDO002.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CEF_DataAccess_bseFCDO002_bseFCDO002</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://s235vd1/bpsws/bpsWebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsRCC\</RelPath>
+      <UpdateFromURL>http://s235vd1/bpsws/bpsWebService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CEF_DataAccess_wsRCC_bpsWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\wsRCC\bpsWebService.wsdl" />
+    <None Include="Web References\wsRCC\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\wsRM\bseFCDO002.wsdl" />
+    <None Include="Web References\wsRM\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties TDLELEMENTTYPE="DataAccess" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

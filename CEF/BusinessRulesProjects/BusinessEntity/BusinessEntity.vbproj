@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <OwnerKey>{FE3BBBB6-72D5-11d2-9ACE-00C04F79A2A4}</OwnerKey>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8EF8AEE9-D3C2-4ACC-922D-64018646BCE3}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>CEF.BusinessEntity</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>
+    </RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CEF.BusinessEntity.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>CEF.BusinessEntity.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>Full</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Name>System.EnterpriseServices</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Analisis.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Auditor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CarteraPerfil.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CarteraPerfilLst.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CarteraUsuario.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CarteraUsuarioLst.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CIIU.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cliente.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClienteRM.vb" />
+    <Compile Include="CollectionEntityBase.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CorridaMetodizado.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cuenta.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CuentaAnalisis.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CuentaAnalisisLst.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CuentaLibre.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CuentaLibreLst.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EEFF.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityBase.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Formula.vb" />
+    <Compile Include="FormulaParametro.vb" />
+    <Compile Include="General.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GrupoEconomico.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Metodizado.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetodizadoBus.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operador.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parametro.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Perfil.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Periodo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PeriodoCorrida.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PeriodoCorridaLst.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PeriodoCuenta.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PeriodoCuentaAnalisis.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PeriodoCuentaAnalisisLst.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PeriodoCuentaLst.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PeriodoLst.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PeriodoNota.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PeriodoProyectado.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PeriodoProyectadoLst.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Permiso.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PermisoPerfil.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PermisoPerfilLst.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProyeccionBE.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProyeccionCuentaBE.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProyeccionCuentaLst.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RCD.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Supuesto.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SupuestoHistorico.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SupuestoHistoricoLst.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SupuestoProyectado.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SupuestoProyectadoLst.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoCambio.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipoEEFF.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Usuario.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VariableFormula.vb" />
+    <Compile Include="VariableFormulaLst.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusinessFacadeProjects\Common\Common.vbproj">
+      <Project>{073EC36A-2483-47D8-9242-FC035463FA5C}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties TDLELEMENTTYPE="BusinessRules" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

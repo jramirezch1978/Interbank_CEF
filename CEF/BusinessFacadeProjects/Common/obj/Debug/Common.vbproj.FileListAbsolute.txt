@@ -1,0 +1,14 @@
+C:\Compartida\Fuentes2021\CEF_FRW4\CEF\BusinessFacadeProjects\Common\bin\CEF.Common.dll
+C:\Compartida\Fuentes2021\CEF_FRW4\CEF\BusinessFacadeProjects\Common\bin\CEF.Common.pdb
+C:\Compartida\Fuentes2021\CEF_FRW4\CEF\BusinessFacadeProjects\Common\bin\CEF.Common.xml
+C:\Compartida\Fuentes2021\CEF_FRW4\CEF\BusinessFacadeProjects\Common\obj\Debug\CEF.Common.dll
+C:\Compartida\Fuentes2021\CEF_FRW4\CEF\BusinessFacadeProjects\Common\obj\Debug\CEF.Common.xml
+C:\Compartida\Fuentes2021\CEF_FRW4\CEF\BusinessFacadeProjects\Common\obj\Debug\CEF.Common.pdb
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessFacadeProjects\Common\bin\CEF.Common.dll
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessFacadeProjects\Common\bin\CEF.Common.pdb
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessFacadeProjects\Common\bin\CEF.Common.xml
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessFacadeProjects\Common\obj\Debug\Common.vbproj.AssemblyReference.cache
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessFacadeProjects\Common\obj\Debug\Common.vbproj.CoreCompileInputs.cache
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessFacadeProjects\Common\obj\Debug\CEF.Common.dll
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessFacadeProjects\Common\obj\Debug\CEF.Common.xml
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessFacadeProjects\Common\obj\Debug\CEF.Common.pdb

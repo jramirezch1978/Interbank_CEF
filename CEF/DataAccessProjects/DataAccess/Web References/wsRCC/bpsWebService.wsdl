@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Get_Sel_Cuest_Solicitud">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pin_NumSolicitud" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Sel_Cuest_SolicitudResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Sel_Cuest_SolicitudResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_InformacionExterna">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="piv_CodTipoDocumento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="piv_NumDocumentoIdentidad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlParametros">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_InformacionExternaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_InformacionExternaResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_CodigoSBS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="piv_CodTipoDocumento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="piv_NumDocumentoIdentidad" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_CodigoSBSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_CodigoSBSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ListadoDeudaRCC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="piv_DesdePeriodo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="piv_FinPeriodo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="piv_CodTipoDocumento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="piv_NumDocumentoIdentidad" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ListadoDeudaRCCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_ListadoDeudaRCCResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Set_CalcularScoring">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pin_CodCuestionario" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pin_NumSolicitud" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="piv_CodUsuModifica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xmlInfoCliente">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="xmlInfoExterna">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="piv_CodTipoDocumento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="piv_NumDocumentoIdentidad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="piv_CodUnico" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Set_CalcularScoringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Set_CalcularScoringResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_CuestionarioXml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TipoCliente" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="TipoPersona" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="NumSolicitud" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodSegmento" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_CuestionarioXmlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_CuestionarioXmlResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Set_CuestionarioSolicitud">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CodCuestionario" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="NumSolicitud" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodUsuCrea" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XMLPregunta" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Set_CuestionarioSolicitudResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Set_CuestionarioSolicitudResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Lst_Sist_Model_Area_Valor">
+        <s:complexType />
+      </s:element>
+      <s:element name="Get_Lst_Sist_Model_Area_ValorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_Lst_Sist_Model_Area_ValorResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_List_Cuest_SolicitudDetalle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CodCuestionario" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="NumSolicitud" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="FlgEstado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="CodAreaValoracion" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Flag" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_List_Cuest_SolicitudDetalleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_List_Cuest_SolicitudDetalleResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ComportamientoXml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Flag" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="CodUnico" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ComportamientoXmlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_ComportamientoXmlResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ComportamientoDetXml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CodUnico" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Periodo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ComportamientoDetXmlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_ComportamientoDetXmlResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_Conexion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pstrAmbiente" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pstrUsuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pstrContrasenia" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pstrDSN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pstrHost" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pstrPuerto" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ConexionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_ConexionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ConexionBPS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pstrAmbiente" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="pstrLlave" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_ConexionBPSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_ConexionBPSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_BPSConexionWS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pstrAmbiente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pstrLlave" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Get_BPSConexionWSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Get_BPSConexionWSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Get_Sel_Cuest_SolicitudSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Sel_Cuest_Solicitud" />
+  </wsdl:message>
+  <wsdl:message name="Get_Sel_Cuest_SolicitudSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Sel_Cuest_SolicitudResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_InformacionExternaSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_InformacionExterna" />
+  </wsdl:message>
+  <wsdl:message name="Get_InformacionExternaSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_InformacionExternaResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_CodigoSBSSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_CodigoSBS" />
+  </wsdl:message>
+  <wsdl:message name="Get_CodigoSBSSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_CodigoSBSResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_ListadoDeudaRCCSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_ListadoDeudaRCC" />
+  </wsdl:message>
+  <wsdl:message name="Get_ListadoDeudaRCCSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_ListadoDeudaRCCResponse" />
+  </wsdl:message>
+  <wsdl:message name="Set_CalcularScoringSoapIn">
+    <wsdl:part name="parameters" element="tns:Set_CalcularScoring" />
+  </wsdl:message>
+  <wsdl:message name="Set_CalcularScoringSoapOut">
+    <wsdl:part name="parameters" element="tns:Set_CalcularScoringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_CuestionarioXmlSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_CuestionarioXml" />
+  </wsdl:message>
+  <wsdl:message name="Get_CuestionarioXmlSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_CuestionarioXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="Set_CuestionarioSolicitudSoapIn">
+    <wsdl:part name="parameters" element="tns:Set_CuestionarioSolicitud" />
+  </wsdl:message>
+  <wsdl:message name="Set_CuestionarioSolicitudSoapOut">
+    <wsdl:part name="parameters" element="tns:Set_CuestionarioSolicitudResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_Lst_Sist_Model_Area_ValorSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Lst_Sist_Model_Area_Valor" />
+  </wsdl:message>
+  <wsdl:message name="Get_Lst_Sist_Model_Area_ValorSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_Lst_Sist_Model_Area_ValorResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_List_Cuest_SolicitudDetalleSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_List_Cuest_SolicitudDetalle" />
+  </wsdl:message>
+  <wsdl:message name="Get_List_Cuest_SolicitudDetalleSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_List_Cuest_SolicitudDetalleResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_ComportamientoXmlSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_ComportamientoXml" />
+  </wsdl:message>
+  <wsdl:message name="Get_ComportamientoXmlSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_ComportamientoXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_ComportamientoDetXmlSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_ComportamientoDetXml" />
+  </wsdl:message>
+  <wsdl:message name="Get_ComportamientoDetXmlSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_ComportamientoDetXmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_ConexionSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_Conexion" />
+  </wsdl:message>
+  <wsdl:message name="Get_ConexionSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_ConexionResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_ConexionBPSSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_ConexionBPS" />
+  </wsdl:message>
+  <wsdl:message name="Get_ConexionBPSSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_ConexionBPSResponse" />
+  </wsdl:message>
+  <wsdl:message name="Get_BPSConexionWSSoapIn">
+    <wsdl:part name="parameters" element="tns:Get_BPSConexionWS" />
+  </wsdl:message>
+  <wsdl:message name="Get_BPSConexionWSSoapOut">
+    <wsdl:part name="parameters" element="tns:Get_BPSConexionWSResponse" />
+  </wsdl:message>
+  <wsdl:portType name="bpsWebServiceSoap">
+    <wsdl:operation name="Get_Sel_Cuest_Solicitud">
+      <wsdl:input message="tns:Get_Sel_Cuest_SolicitudSoapIn" />
+      <wsdl:output message="tns:Get_Sel_Cuest_SolicitudSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_InformacionExterna">
+      <wsdl:input message="tns:Get_InformacionExternaSoapIn" />
+      <wsdl:output message="tns:Get_InformacionExternaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_CodigoSBS">
+      <wsdl:input message="tns:Get_CodigoSBSSoapIn" />
+      <wsdl:output message="tns:Get_CodigoSBSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_ListadoDeudaRCC">
+      <wsdl:input message="tns:Get_ListadoDeudaRCCSoapIn" />
+      <wsdl:output message="tns:Get_ListadoDeudaRCCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Set_CalcularScoring">
+      <wsdl:input message="tns:Set_CalcularScoringSoapIn" />
+      <wsdl:output message="tns:Set_CalcularScoringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_CuestionarioXml">
+      <wsdl:input message="tns:Get_CuestionarioXmlSoapIn" />
+      <wsdl:output message="tns:Get_CuestionarioXmlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Set_CuestionarioSolicitud">
+      <wsdl:input message="tns:Set_CuestionarioSolicitudSoapIn" />
+      <wsdl:output message="tns:Set_CuestionarioSolicitudSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Lst_Sist_Model_Area_Valor">
+      <wsdl:input message="tns:Get_Lst_Sist_Model_Area_ValorSoapIn" />
+      <wsdl:output message="tns:Get_Lst_Sist_Model_Area_ValorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_List_Cuest_SolicitudDetalle">
+      <wsdl:input message="tns:Get_List_Cuest_SolicitudDetalleSoapIn" />
+      <wsdl:output message="tns:Get_List_Cuest_SolicitudDetalleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_ComportamientoXml">
+      <wsdl:input message="tns:Get_ComportamientoXmlSoapIn" />
+      <wsdl:output message="tns:Get_ComportamientoXmlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_ComportamientoDetXml">
+      <wsdl:input message="tns:Get_ComportamientoDetXmlSoapIn" />
+      <wsdl:output message="tns:Get_ComportamientoDetXmlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Conexion">
+      <wsdl:input message="tns:Get_ConexionSoapIn" />
+      <wsdl:output message="tns:Get_ConexionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_ConexionBPS">
+      <wsdl:input message="tns:Get_ConexionBPSSoapIn" />
+      <wsdl:output message="tns:Get_ConexionBPSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_BPSConexionWS">
+      <wsdl:input message="tns:Get_BPSConexionWSSoapIn" />
+      <wsdl:output message="tns:Get_BPSConexionWSSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="bpsWebServiceSoap" type="tns:bpsWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_Sel_Cuest_Solicitud">
+      <soap:operation soapAction="http://tempuri.org/Get_Sel_Cuest_Solicitud" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_InformacionExterna">
+      <soap:operation soapAction="http://tempuri.org/Get_InformacionExterna" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_CodigoSBS">
+      <soap:operation soapAction="http://tempuri.org/Get_CodigoSBS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ListadoDeudaRCC">
+      <soap:operation soapAction="http://tempuri.org/Get_ListadoDeudaRCC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_CalcularScoring">
+      <soap:operation soapAction="http://tempuri.org/Set_CalcularScoring" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_CuestionarioXml">
+      <soap:operation soapAction="http://tempuri.org/Get_CuestionarioXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_CuestionarioSolicitud">
+      <soap:operation soapAction="http://tempuri.org/Set_CuestionarioSolicitud" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Lst_Sist_Model_Area_Valor">
+      <soap:operation soapAction="http://tempuri.org/Get_Lst_Sist_Model_Area_Valor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_List_Cuest_SolicitudDetalle">
+      <soap:operation soapAction="http://tempuri.org/Get_List_Cuest_SolicitudDetalle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ComportamientoXml">
+      <soap:operation soapAction="http://tempuri.org/Get_ComportamientoXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ComportamientoDetXml">
+      <soap:operation soapAction="http://tempuri.org/Get_ComportamientoDetXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Conexion">
+      <soap:operation soapAction="http://tempuri.org/Get_Conexion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ConexionBPS">
+      <soap:operation soapAction="http://tempuri.org/Get_ConexionBPS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_BPSConexionWS">
+      <soap:operation soapAction="http://tempuri.org/Get_BPSConexionWS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="bpsWebServiceSoap12" type="tns:bpsWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_Sel_Cuest_Solicitud">
+      <soap12:operation soapAction="http://tempuri.org/Get_Sel_Cuest_Solicitud" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_InformacionExterna">
+      <soap12:operation soapAction="http://tempuri.org/Get_InformacionExterna" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_CodigoSBS">
+      <soap12:operation soapAction="http://tempuri.org/Get_CodigoSBS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ListadoDeudaRCC">
+      <soap12:operation soapAction="http://tempuri.org/Get_ListadoDeudaRCC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_CalcularScoring">
+      <soap12:operation soapAction="http://tempuri.org/Set_CalcularScoring" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_CuestionarioXml">
+      <soap12:operation soapAction="http://tempuri.org/Get_CuestionarioXml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_CuestionarioSolicitud">
+      <soap12:operation soapAction="http://tempuri.org/Set_CuestionarioSolicitud" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Lst_Sist_Model_Area_Valor">
+      <soap12:operation soapAction="http://tempuri.org/Get_Lst_Sist_Model_Area_Valor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_List_Cuest_SolicitudDetalle">
+      <soap12:operation soapAction="http://tempuri.org/Get_List_Cuest_SolicitudDetalle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ComportamientoXml">
+      <soap12:operation soapAction="http://tempuri.org/Get_ComportamientoXml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ComportamientoDetXml">
+      <soap12:operation soapAction="http://tempuri.org/Get_ComportamientoDetXml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Conexion">
+      <soap12:operation soapAction="http://tempuri.org/Get_Conexion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_ConexionBPS">
+      <soap12:operation soapAction="http://tempuri.org/Get_ConexionBPS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_BPSConexionWS">
+      <soap12:operation soapAction="http://tempuri.org/Get_BPSConexionWS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="bpsWebService">
+    <wsdl:port name="bpsWebServiceSoap" binding="tns:bpsWebServiceSoap">
+      <soap:address location="http://s235vd1/bpsws/bpsWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="bpsWebServiceSoap12" binding="tns:bpsWebServiceSoap12">
+      <soap12:address location="http://s235vd1/bpsws/bpsWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,8 @@
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessFacadeProjects\Common\bin\CEF.Common.dll
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessFacadeProjects\Common\bin\CEF.Common.pdb
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessFacadeProjects\Common\bin\CEF.Common.xml
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessFacadeProjects\Common\obj\Release\Common.vbproj.AssemblyReference.cache
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessFacadeProjects\Common\obj\Release\Common.vbproj.CoreCompileInputs.cache
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessFacadeProjects\Common\obj\Release\CEF.Common.dll
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessFacadeProjects\Common\obj\Release\CEF.Common.xml
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessFacadeProjects\Common\obj\Release\CEF.Common.pdb

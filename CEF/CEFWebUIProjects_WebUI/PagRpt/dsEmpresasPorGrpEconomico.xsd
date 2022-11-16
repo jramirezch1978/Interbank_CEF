@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsEmpresasPorGrpEconomico" targetNamespace="http://tempuri.org/dsEmpresasPorGrpEconomico.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/dsEmpresasPorGrpEconomico.xsd"
+	xmlns:mstns="http://tempuri.org/dsEmpresasPorGrpEconomico.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dsEmpresasPorGrpEconomico" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="EmpresasPorGrpEconomico">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="RAZON_SOCIAL" type="xs:string" minOccurs="0" />
+							<xs:element name="ACTIVO" type="xs:double" minOccurs="0" />
+							<xs:element name="PASIVO" type="xs:double" minOccurs="0" />
+							<xs:element name="PATRIMONIO_NETO" type="xs:double" minOccurs="0" />
+							<xs:element name="INGRESOS_NETOS" type="xs:double" minOccurs="0" />
+							<xs:element name="UTILIDAD_x002F_PERDIDA" type="xs:double" minOccurs="0" />
+							<xs:element name="EBIDTA" type="xs:double" minOccurs="0" />
+							<xs:element name="CAPITAL_TRABAJO" type="xs:double" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,5 @@
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\DataAccessProjects\DataAccess\obj\Release\DataAccess.vbproj.AssemblyReference.cache
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\DataAccessProjects\DataAccess\obj\Release\DataAccess.vbproj.CoreCompileInputs.cache
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\DataAccessProjects\DataAccess\obj\Release\CEF.DataAccess.dll
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\DataAccessProjects\DataAccess\obj\Release\CEF.DataAccess.xml
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\DataAccessProjects\DataAccess\obj\Release\CEF.DataAccess.pdb

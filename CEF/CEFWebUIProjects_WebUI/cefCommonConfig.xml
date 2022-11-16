@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<assemblySettings>
+		<add key="RutaLog" value="C:\Sda\Log\Cef\" />
+		<add key="IdAmbiente" value="3" />
+		<add key="RutaCrystal" value="http://s01rd/Cef" />
+		<add key="wsFCDRM" value="http://s235va2/fcdWS/bseFCDO002.asmx" />
+		<add key="wsBPSRCC" value="http://s235va2/bpsws/bpsWebService.asmx" />
+	</assemblySettings>
+	<CadenaConexion>
+		<!--<add key="IBCef" value="Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=IBCef;Data Source=s01rd\BDT;" /> -->
+		 <add key="IBCef" value="Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=IBCef;Data Source=s510vd02\bdt;" /> 
+		<!--<add key="IBCef" value="Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=IBCef;Data Source=s504vp03\BDT;" />-->
+		<add key="MonitorE" value="Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=MonitorE;Data Source=s01rd\bdt;" />
+	</CadenaConexion>
+</configuration>

@@ -1,0 +1,12 @@
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessRulesProjects\BusinessEntity\bin\CEF.BusinessEntity.dll
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessRulesProjects\BusinessEntity\bin\CEF.BusinessEntity.pdb
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessRulesProjects\BusinessEntity\bin\CEF.BusinessEntity.xml
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessRulesProjects\BusinessEntity\bin\CEF.Common.dll
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessRulesProjects\BusinessEntity\bin\CEF.Common.pdb
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessRulesProjects\BusinessEntity\bin\CEF.Common.xml
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessRulesProjects\BusinessEntity\obj\Release\BusinessEntity.vbproj.AssemblyReference.cache
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessRulesProjects\BusinessEntity\obj\Release\BusinessEntity.vbproj.CoreCompileInputs.cache
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessRulesProjects\BusinessEntity\obj\Release\BusinessEntity.vbproj.CopyComplete
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessRulesProjects\BusinessEntity\obj\Release\CEF.BusinessEntity.dll
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessRulesProjects\BusinessEntity\obj\Release\CEF.BusinessEntity.xml
+D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessRulesProjects\BusinessEntity\obj\Release\CEF.BusinessEntity.pdb

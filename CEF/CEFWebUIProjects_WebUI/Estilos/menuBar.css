@@ -1,0 +1,106 @@
+BODY
+{
+    BORDER-BOTTOM: 0px;
+    BORDER-LEFT: 0px;
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 1px solid #750204;
+    MARGIN: 0px 0px 0px 0px
+}
+#menubar
+{
+    BACKGROUND-COLOR: #E1E0E0;
+    COLOR: Black;
+    CURSOR: default;
+    FONT-FAMILY: Tahoma;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 1px;
+    PADDING-LEFT: 1px;
+    PADDING-RIGHT: 1px;
+    PADDING-TOP: 1px;
+    POSITION: relative;
+    Z-INDEX: 1
+}
+#menubar .root
+{
+    PADDING-LEFT: 2pt;
+    PADDING-RIGHT: 6pt
+}
+#menubar TABLE
+{
+    BACKGROUND-COLOR: #999999;
+    BACKGROUND-IMAGE: none;
+    BACKGROUND-REPEAT: repeat;
+    BORDER-BOTTOM: 1px solid;
+    BORDER-LEFT: 1px solid;
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    COLOR: Black;
+    DISPLAY: none;
+    FONT-FAMILY: Tahoma;
+    FONT-SIZE: 11px;
+    MARGIN: 0pt;
+    PADDING-BOTTOM: 0pt;
+    PADDING-LEFT: 0pt;
+    PADDING-RIGHT: 0pt;
+    PADDING-TOP: 0pt;
+    POSITION: absolute
+}
+#menubar TABLE TD
+{
+    BACKGROUND-COLOR: #E1E0E0;
+    CURSOR: hand;
+    MARGIN: 0pt;
+    PADDING-BOTTOM: 2pt;
+    PADDING-LEFT: 16pt;
+    PADDING-RIGHT: 2pt;
+    PADDING-TOP: 2pt
+}
+#menubar .highlight
+{
+    BACKGROUND: #CCCCCC;
+    COLOR: Black
+}
+#menubar .disabledhighlight
+{
+    BACKGROUND: navy;
+    COLOR: silver
+}
+#menubar #break
+{
+    COLOR: silver
+}
+#menubar .disabled
+{
+    COLOR: silver
+}
+#menubar #break
+{
+    MARGIN: 0pt;
+    PADDING-BOTTOM: 0pt;
+    PADDING-LEFT: 0pt;
+    PADDING-RIGHT: 0pt;
+    PADDING-TOP: 0pt
+}
+#menubar .more
+{
+    FLOAT: right;
+    FONT: 9pt webdings;
+    HEIGHT: 9pt;
+    LEFT: 1pt;
+    MARGIN: 0pt;
+    PADDING-BOTTOM: 0pt;
+    PADDING-LEFT: 0pt;
+    PADDING-RIGHT: 0pt;
+    PADDING-TOP: 0pt;
+    POSITION: relative;
+    TOP: -2pt;
+    WIDTH: 0.8em
+}
+#menubar .left
+{
+    MARGIN-LEFT: -12pt
+}
+#GoMenu
+{
+    WIDTH: 120pt
+}

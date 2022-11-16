@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="dsResumenEjecutivo" targetNamespace="http://tempuri.org/dsResumenEjecutivo.xsd"
+	elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/dsResumenEjecutivo.xsd"
+	xmlns:mstns="http://tempuri.org/dsResumenEjecutivo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="dsResumenEjecutivo" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Detalle">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CODCUENTA" type="xs:int" minOccurs="0" />
+							<xs:element name="CODEEFF" type="xs:int" minOccurs="0" />
+							<xs:element name="DESCRIPCION" type="xs:string" minOccurs="0" />
+							<xs:element name="ORDEN" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PERIODO1" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PERIODO2" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PERIODO3" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PERIODO4" type="xs:decimal" minOccurs="0" />
+							<xs:element name="PERIODO5" type="xs:decimal" minOccurs="0" />
+							<xs:element name="ULTIMOS12" type="xs:decimal" minOccurs="0" />
+							<xs:element name="CAGR" type="xs:decimal" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Cabecera">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="RAZONSOCIAL" type="xs:string" minOccurs="0" />
+							<xs:element name="NUMERODOCUMENTO" type="xs:string" minOccurs="0" />
+							<xs:element name="CIFRAS_EN" type="xs:string" minOccurs="0" />
+							<xs:element name="CUCLIENTE" type="xs:string" minOccurs="0" />
+							<xs:element name="NOMBREEJECUTIVO" type="xs:string" minOccurs="0" />
+							<xs:element name="NOMBREUSUARIO" type="xs:string" minOccurs="0" />
+							<xs:element name="AUDITORES" type="xs:string" minOccurs="0" />
+							<xs:element name="PERIODO1_ESTADO" type="xs:string" minOccurs="0" />
+							<xs:element name="PERIODO1_FECHA" type="xs:date" minOccurs="0" />
+							<xs:element name="PERIODO1_SITUACION" type="xs:string" minOccurs="0" />
+							<xs:element name="PERIODO2_ESTADO" type="xs:string" minOccurs="0" />
+							<xs:element name="PERIODO2_FECHA" type="xs:date" minOccurs="0" />
+							<xs:element name="PERIODO2_SITUACION" type="xs:string" minOccurs="0" />
+							<xs:element name="PERIODO3_ESTADO" type="xs:string" minOccurs="0" />
+							<xs:element name="PERIODO3_FECHA" type="xs:date" minOccurs="0" />
+							<xs:element name="PERIODO3_SITUACION" type="xs:string" minOccurs="0" />
+							<xs:element name="SITUACION4_ESTADO" type="xs:string" minOccurs="0" />
+							<xs:element name="SITUACION4_FECHA" type="xs:date" minOccurs="0" />
+							<xs:element name="SITUACION4_SITUACION" type="xs:string" minOccurs="0" />
+							<xs:element name="PERIODO5_ESTADO" type="xs:string" minOccurs="0" />
+							<xs:element name="PERIODO5_FECHA" type="xs:date" minOccurs="0" />
+							<xs:element name="PERIODO5_SITUACION" type="xs:string" minOccurs="0" />
+							<xs:element name="TIPODOCDESC" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
