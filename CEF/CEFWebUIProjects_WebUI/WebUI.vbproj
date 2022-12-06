@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <OptionInfer>Off</OptionInfer>
     <UseIISExpress>false</UseIISExpress>
@@ -52,7 +52,7 @@
     </SccAuxPath>
     <SccProvider>
     </SccProvider>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <OldToolsVersion>2.0</OldToolsVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -76,8 +76,6 @@
     <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
     <DebugType>full</DebugType>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\</OutputPath>
@@ -99,27 +97,14 @@
     <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
     <DebugType>none</DebugType>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BusinessFacadeProjects\Common\Common.vbproj">
-      <Project>{073ec36a-2483-47d8-9242-fc035463fa5c}</Project>
-      <Name>Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BusinessRulesProjects\BusinessEntity\BusinessEntity.vbproj">
-      <Project>{8ef8aee9-d3c2-4acc-922d-64018646bce3}</Project>
-      <Name>BusinessEntity</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BusinessRulesProjects\BusinessRules\BusinessRules.vbproj">
-      <Project>{25494682-212d-4820-ad35-72932f2fea07}</Project>
-      <Name>BusinessRules</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DataAccessProjects\DataAccess\DataAccess.vbproj">
-      <Project>{19458b80-677c-44b9-ba57-e712a04fbda6}</Project>
+      <Project>{19458B80-677C-44B9-BA57-E712A04FBDA6}</Project>
       <Name>DataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\WebControls\WebControls.vbproj">
-      <Project>{d4a5a806-e68c-4a98-a1ff-a040aa64358b}</Project>
+      <Project>{D4A5A806-E68C-4A98-A1FF-A040AA64358B}</Project>
       <Name>WebControls</Name>
     </ProjectReference>
     <Reference Include="AjaxControlToolkit, Version=1.0.20229.29977, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
@@ -134,13 +119,27 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>WebUI.References\Anthem.dll</HintPath>
     </Reference>
-    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.Web, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="itextsharp, Version=5.0.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>WebUI.References\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Select.HtmlToPdf, Version=22.1.0.0, Culture=neutral, PublicKeyToken=e0ae9f6e27a97018, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Select.HtmlToPdf.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
@@ -152,9 +151,7 @@
     <Reference Include="System.Drawing">
       <Name>System.Drawing</Name>
     </Reference>
-    <Reference Include="System.EnterpriseServices">
-      <Private>True</Private>
-    </Reference>
+    <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Web">
       <Name>System.Web</Name>
     </Reference>
@@ -166,6 +163,22 @@
     <Reference Include="System.Web.Services">
       <Name>System.Web.Services</Name>
     </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\BusinessFacadeProjects\Common\Common.vbproj">
+      <Project>{073EC36A-2483-47D8-9242-FC035463FA5C}</Project>
+      <Name>Common</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessRulesProjects\BusinessEntity\BusinessEntity.vbproj">
+      <Project>{8EF8AEE9-D3C2-4ACC-922D-64018646BCE3}</Project>
+      <Name>BusinessEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessRulesProjects\BusinessRules\BusinessRules.vbproj">
+      <Project>{25494682-212D-4820-AD35-72932F2FEA07}</Project>
+      <Name>BusinessRules</Name>
+    </ProjectReference>
     <COMReference Include="stdole">
       <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
       <VersionMajor>2</VersionMajor>
@@ -173,9 +186,6 @@
       <Lcid>0</Lcid>
       <WrapperTool>primary</WrapperTool>
     </COMReference>
-    <Reference Include="System.Xml">
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
@@ -858,9 +868,6 @@
     <Content Include="bin\CEF.WebControls.dll" />
     <Content Include="bin\CEF.WebUI.dll" />
     <Content Include="bin\itextsharp.dll" />
-    <Content Include="cefCommonConfig.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="Dependencias\AjaxPro.dll" />
     <Content Include="Dependencias\Anthem.dll" />
     <Content Include="Dependencias\cefDataConfig.xml" />
@@ -880,6 +887,8 @@
     <Content Include="Funciones\UtilAjax.js" />
     <Content Include="Funciones\UtilFecha.js" />
     <Content Include="Funciones\UtilVentana.js" />
+    <Content Include="HtmlTemplate\PlantillaProyeccionesDetalle.html" />
+    <Content Include="HtmlTemplate\PlantillaProyecciones.html" />
     <Content Include="Imagen\bordes\brd_curva_Inf_Der_blue.gif" />
     <Content Include="Imagen\bordes\brd_curva_Inf_Izq_blue.gif" />
     <Content Include="Imagen\bordes\brd_curva_Sup_Der_blue.gif" />
@@ -1421,7 +1430,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>37993</DevelopmentServerPort>
+          <DevelopmentServerPort>4919</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost/CEFWebUIProjects_WebUI</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
@@ -1431,7 +1440,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
-      <UserProperties TDLFILE="DAP.tdl" TDLELEMENTTYPE="WebUI" />
+      <UserProperties TDLELEMENTTYPE="WebUI" TDLFILE="DAP.tdl" />
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup>

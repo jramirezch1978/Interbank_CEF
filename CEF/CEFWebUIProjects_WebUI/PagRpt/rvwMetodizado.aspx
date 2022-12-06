@@ -1,6 +1,6 @@
 
 <%@ Page Language="vb" AutoEventWireup="false" Codebehind="rvwMetodizado.aspx.vb" Inherits="CEF.WebUI.rvwMetodizado"%>
-<%@ Register Assembly="CrystalDecisions.Web, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"
+<%@ Register Assembly="CrystalDecisions.Web, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"
     Namespace="CrystalDecisions.Web" TagPrefix="CR" %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">

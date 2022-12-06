@@ -5,6 +5,13 @@ C:\Compartida\Fuentes2021\CEF_FRW4\CEF\BusinessRulesProjects\BusinessEntity\obj\
 C:\Compartida\Fuentes2021\CEF_FRW4\CEF\BusinessRulesProjects\BusinessEntity\obj\Debug\CEF.BusinessEntity.dll
 C:\Compartida\Fuentes2021\CEF_FRW4\CEF\BusinessRulesProjects\BusinessEntity\obj\Debug\CEF.BusinessEntity.xml
 C:\Compartida\Fuentes2021\CEF_FRW4\CEF\BusinessRulesProjects\BusinessEntity\obj\Debug\CEF.BusinessEntity.pdb
+C:\IBK\CEF\BusinessRulesProjects\BusinessEntity\bin\CEF.BusinessEntity.dll
+C:\IBK\CEF\BusinessRulesProjects\BusinessEntity\bin\CEF.BusinessEntity.pdb
+C:\IBK\CEF\BusinessRulesProjects\BusinessEntity\bin\CEF.BusinessEntity.xml
+C:\IBK\CEF\BusinessRulesProjects\BusinessEntity\obj\Debug\CEF.BusinessEntity.dll
+C:\IBK\CEF\BusinessRulesProjects\BusinessEntity\obj\Debug\CEF.BusinessEntity.xml
+C:\IBK\CEF\BusinessRulesProjects\BusinessEntity\obj\Debug\CEF.BusinessEntity.pdb
+C:\IBK\CEF\BusinessRulesProjects\BusinessEntity\obj\Debug\BusinessEntity.vbprojResolveAssemblyReference.cache
 D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessRulesProjects\BusinessEntity\bin\CEF.BusinessEntity.dll
 D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessRulesProjects\BusinessEntity\bin\CEF.BusinessEntity.pdb
 D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessRulesProjects\BusinessEntity\bin\CEF.BusinessEntity.xml

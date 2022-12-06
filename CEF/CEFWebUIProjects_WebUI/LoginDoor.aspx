@@ -45,6 +45,7 @@
 					<tr>
 						<td colspan="2">
 							<asp:Button ID="btnIngresar" runat="server" Text="Ingresar"  />
+                            <asp:Button ID="btnDownload" runat="server" Text="download"  />
 						</td>
 					</tr>
 				</table>

@@ -17,6 +17,7 @@ Imports System.Web.UI.WebControls
 Imports System.Text
 Imports CEF.Common
 Imports CEF.Common.Globals
+Imports CEF.SystemFrameworks
 Imports CEF.BusinessRules
 Imports CEF.BusinessEntity
 Imports System.Text.RegularExpressions

@@ -6,6 +6,15 @@ C:\Compartida\Fuentes2021\CEF_FRW4\CEF\WebControls\obj\Debug\WebControls.vbproj.
 C:\Compartida\Fuentes2021\CEF_FRW4\CEF\WebControls\obj\Debug\CEF.WebControls.dll
 C:\Compartida\Fuentes2021\CEF_FRW4\CEF\WebControls\obj\Debug\CEF.xml
 C:\Compartida\Fuentes2021\CEF_FRW4\CEF\WebControls\obj\Debug\CEF.WebControls.pdb
+C:\IBK\CEF\WebControls\bin\Debug\CEF.WebControls.dll
+C:\IBK\CEF\WebControls\bin\Debug\CEF.WebControls.pdb
+C:\IBK\CEF\WebControls\bin\Debug\CEF.xml
+C:\IBK\CEF\WebControls\obj\Debug\WebControls.Resources.resources
+C:\IBK\CEF\WebControls\obj\Debug\WebControls.vbproj.GenerateResource.cache
+C:\IBK\CEF\WebControls\obj\Debug\CEF.WebControls.dll
+C:\IBK\CEF\WebControls\obj\Debug\CEF.xml
+C:\IBK\CEF\WebControls\obj\Debug\CEF.WebControls.pdb
+C:\IBK\CEF\WebControls\obj\Debug\WebControls.vbprojResolveAssemblyReference.cache
 D:\Work\EVOL\Interbank\Fuentes2022\CEF\WebControls\bin\Debug\CEF.WebControls.dll
 D:\Work\EVOL\Interbank\Fuentes2022\CEF\WebControls\bin\Debug\CEF.WebControls.pdb
 D:\Work\EVOL\Interbank\Fuentes2022\CEF\WebControls\bin\Debug\CEF.xml

@@ -14,13 +14,13 @@ Namespace CEF.Common
     Public Class ErrorLog
         Private _strFileName As String
 
-        Private Const XML_ERRORLOG As String = "CEFLog"
-        Private Const XML_EXCEPTION As String = "Exception"
-        Private Const XML_EXCEPTION_TIME As String = "Fecha"
-        Private Const XML_EXCEPTION_DESCRIPTION As String = "Descripcion"
-        Private Const XML_EXCEPTION_METHOD As String = "Metodo"
-        Private Const XML_EXCEPTION_HELPLINK As String = "EnlaceAyuda"
-        Private Const XML_EXCEPTION_TRACE As String = "Trace"
+        Private Const XML_ERRORLOG = "CEFLog"
+        Private Const XML_EXCEPTION = "Exception"
+        Private Const XML_EXCEPTION_TIME = "Fecha"
+        Private Const XML_EXCEPTION_DESCRIPTION = "Descripcion"
+        Private Const XML_EXCEPTION_METHOD = "Metodo"
+        Private Const XML_EXCEPTION_HELPLINK = "EnlaceAyuda"
+        Private Const XML_EXCEPTION_TRACE = "Trace"
 
         Public Property FileName() As String
             Get

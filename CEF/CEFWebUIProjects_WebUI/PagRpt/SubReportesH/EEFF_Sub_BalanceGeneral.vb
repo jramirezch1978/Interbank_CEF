@@ -34,20 +34,20 @@ Public Class EEFF_Sub_BalanceGeneral
         End Set
     End Property
     
-    Public Overrides Property NewGenerator() As Boolean
+    Public Property NewGenerator() As Boolean
         Get
-            Return true
+            Return True
         End Get
-        Set
+        Set(ByVal value As Boolean)
             'Do nothing
         End Set
     End Property
     
-    Public Overrides Property FullResourceName() As String
+    Public Property FullResourceName() As String
         Get
             Return "EEFF_Sub_BalanceGeneral.rpt"
         End Get
-        Set
+        Set(ByVal value As String)
             'Do nothing
         End Set
     End Property

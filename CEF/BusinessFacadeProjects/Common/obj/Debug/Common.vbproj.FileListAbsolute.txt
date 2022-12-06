@@ -4,6 +4,12 @@ C:\Compartida\Fuentes2021\CEF_FRW4\CEF\BusinessFacadeProjects\Common\bin\CEF.Com
 C:\Compartida\Fuentes2021\CEF_FRW4\CEF\BusinessFacadeProjects\Common\obj\Debug\CEF.Common.dll
 C:\Compartida\Fuentes2021\CEF_FRW4\CEF\BusinessFacadeProjects\Common\obj\Debug\CEF.Common.xml
 C:\Compartida\Fuentes2021\CEF_FRW4\CEF\BusinessFacadeProjects\Common\obj\Debug\CEF.Common.pdb
+C:\IBK\CEF\BusinessFacadeProjects\Common\bin\CEF.Common.dll
+C:\IBK\CEF\BusinessFacadeProjects\Common\bin\CEF.Common.pdb
+C:\IBK\CEF\BusinessFacadeProjects\Common\bin\CEF.Common.xml
+C:\IBK\CEF\BusinessFacadeProjects\Common\obj\Debug\CEF.Common.dll
+C:\IBK\CEF\BusinessFacadeProjects\Common\obj\Debug\CEF.Common.xml
+C:\IBK\CEF\BusinessFacadeProjects\Common\obj\Debug\CEF.Common.pdb
 D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessFacadeProjects\Common\bin\CEF.Common.dll
 D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessFacadeProjects\Common\bin\CEF.Common.pdb
 D:\Work\EVOL\Interbank\Fuentes2022\CEF\BusinessFacadeProjects\Common\bin\CEF.Common.xml
