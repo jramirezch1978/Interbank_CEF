@@ -90,6 +90,17 @@ Partial Class LoginDoor
         Dim obrMetodizado As Metodizado = New Metodizado
         Dim dsProyeccionesCab As DataSet = obrMetodizado.listarProyeccionesCabecera(250, "3;1;2", "")
         Dim cabecera As DataTable = dsProyeccionesCab.Tables(0)
+
+        Dim strTipoPer1 As String = cabecera.Rows(0)("TipoPer1").ToString
+        Dim strTipoPer2 As String = cabecera.Rows(0)("TipoPer2").ToString
+        Dim strTipoPer3 As String = cabecera.Rows(0)("TipoPer3").ToString
+        Dim strTipoPer4 As String = cabecera.Rows(0)("TipoPer4").ToString
+
+        Dim strFecha4 As String = cabecera.Rows(0)("Fecha4").ToString
+        Dim strFecha3 As String = cabecera.Rows(0)("Fecha3").ToString
+        Dim strFecha2 As String = cabecera.Rows(0)("Fecha2").ToString
+        Dim strFecha1 As String = cabecera.Rows(0)("Fecha1").ToString
+
         htmlString = htmlString.Replace("[Titulo]", "PROYECCIONES")
         htmlString = htmlString.Replace("[TipoPer1]", ColumnValue(cabecera.Rows(0), "TipoPer1"))
         htmlString = htmlString.Replace("[EstadoFinanciero1]", cabecera.Rows(0)("EstadoFinanciero1").ToString)
@@ -107,7 +118,16 @@ Partial Class LoginDoor
         htmlString = htmlString.Replace("[EstadoFinanciero4]", cabecera.Rows(0)("EstadoFinanciero4").ToString)
         htmlString = htmlString.Replace("[Estado4]", cabecera.Rows(0)("Estado4").ToString)
         htmlString = htmlString.Replace("[Fecha4]", cabecera.Rows(0)("Fecha4").ToString)
-        
+
+        htmlString = htmlString.Replace("[Varc1]", Left(strTipoPer1, 1) + Right(strFecha2, 2) + " / " +
+                                                   Left(strTipoPer1, 1) + Right(strFecha1, 2))
+
+        htmlString = htmlString.Replace("[Varc2]", Left(strTipoPer3, 1) + Right(strFecha3, 2) + " / " +
+                                                   Left(strTipoPer2, 1) + Right(strFecha2, 2))
+
+        htmlString = htmlString.Replace("[Varc3]", Left(strTipoPer4, 1) + Right(strFecha4, 2) + " / " +
+                                                   Left(strTipoPer3, 1) + Right(strFecha3, 2))
+
         Return htmlString
     End Function
 
@@ -125,14 +145,55 @@ Partial Class LoginDoor
             For Each row As DataRow In detalle.Rows
                 Dim rowTmpl As String = htmlString
                 rowTmpl = rowTmpl.Replace("[Descripcion]", row("Descripcion").ToString)
-                rowTmpl = rowTmpl.Replace("[Real1]", row("Real1").ToString)
-                rowTmpl = rowTmpl.Replace("[Vard1]", row("Var1").ToString)
-                rowTmpl = rowTmpl.Replace("[Proy1]", row("Proy1").ToString)
-                rowTmpl = rowTmpl.Replace("[Vard2]", row("Var2").ToString)
-                rowTmpl = rowTmpl.Replace("[Real2]", row("Real2").ToString)
-                rowTmpl = rowTmpl.Replace("[Vard3]", row("Var3").ToString)
-                rowTmpl = rowTmpl.Replace("[Proy2]", row("Proy2").ToString)
-                rowTmpl = rowTmpl.Replace("[Vard4]", row("Var4").ToString)
+
+                If row("Real1") IsNot DBNull.Value Then
+                    rowTmpl = rowTmpl.Replace("[Real1]", Convert.ToDecimal(row("Real1")).ToString("###,##0.00"))
+                Else
+                    rowTmpl = rowTmpl.Replace("[Real1]", "")
+                End If
+
+                If row("Var1") IsNot DBNull.Value Then
+                    rowTmpl = rowTmpl.Replace("[Var1]", Convert.ToDecimal(row("Var1")).ToString("###,##0.00"))
+                Else
+                    rowTmpl = rowTmpl.Replace("[Var1]", "")
+                End If
+
+                If row("Proy1") IsNot DBNull.Value Then
+                    rowTmpl = rowTmpl.Replace("[Proy1]", Convert.ToDecimal(row("Proy1")).ToString("###,##0.00"))
+                Else
+                    rowTmpl = rowTmpl.Replace("[Proy1]", "")
+                End If
+
+                If row("Var2") IsNot DBNull.Value Then
+                    rowTmpl = rowTmpl.Replace("[Var2]", Convert.ToDecimal(row("Var2")).ToString("###,##0.00"))
+                Else
+                    rowTmpl = rowTmpl.Replace("[Var2]", "")
+                End If
+
+                If row("Real2") IsNot DBNull.Value Then
+                    rowTmpl = rowTmpl.Replace("[Real2]", Convert.ToDecimal(row("Real2")).ToString("###,##0.00"))
+                Else
+                    rowTmpl = rowTmpl.Replace("[Real2]", "")
+                End If
+
+                If row("Var3") IsNot DBNull.Value Then
+                    rowTmpl = rowTmpl.Replace("[Var3]", Convert.ToDecimal(row("Var3")).ToString("###,##0.00"))
+                Else
+                    rowTmpl = rowTmpl.Replace("[Var3]", "")
+                End If
+
+                If row("Proy2") IsNot DBNull.Value Then
+                    rowTmpl = rowTmpl.Replace("[Proy2]", Convert.ToDecimal(row("Proy2")).ToString("###,##0.00"))
+                Else
+                    rowTmpl = rowTmpl.Replace("[Proy2]", "")
+                End If
+
+                If row("Var4") IsNot DBNull.Value Then
+                    rowTmpl = rowTmpl.Replace("[Var4]", Convert.ToDecimal(row("Var4")).ToString("###,##0.00"))
+                Else
+                    rowTmpl = rowTmpl.Replace("[Var4]", "")
+                End If
+
                 rowTmpl = rowTmpl.Replace("[Vara1]", row("Vara1").ToString)
                 rowTmpl = rowTmpl.Replace("[Vara2]", row("Vara2").ToString)
                 rowTmpl = rowTmpl.Replace("[Vara3]", row("Vara3").ToString)
